@@ -1,9 +1,17 @@
 import React, { useState } from "react";
 import { FiMenu, FiX } from "react-icons/fi";
 import logo from "../assets/logo.png";
+import { useNavigate , Link } from "react-router-dom";
 
 export default function Navbar() {
+  const navigate=useNavigate();
   const [menuOpen, setMenuOpen] = useState(false);
+  const navItems = [
+    { name: "Home", path: "/" },
+    { name: "About Us", path: "/about" },
+    { name: "Services", path: "/services" },
+    { name: "Certifications", path: "/certifications" },
+  ];
 
   return (
     <nav className="w-full  bg-white shadow-sm py-4 px-6 md:px-10 xl:px-26">
@@ -16,11 +24,15 @@ export default function Navbar() {
 
         {/* Desktop Navigation Links */}
         <div className="hidden  md:flex items-center gap-4 lg:gap-12 xl:gap-16 [@media(min-width:750px)_and_(max-width:800px)]:w-[25rem]   2xl:mr-[150px]">
-          {["Home", "About Us", "Services", "Certifications"].map((item, index) => (
-            <p key={index} className="font-urbanist  text-[#101010] text-[18px] lg:text-[20px] font-urbanist-medium transition-colors cursor-pointer">
-              {item}
-            </p>
-          ))}
+        {navItems.map((item, index) => (
+  <Link
+    key={index}
+    to={item.path}
+    className="font-urbanist text-[#101010] text-[18px] lg:text-[20px] font-urbanist-medium transition-colors cursor-pointer"
+  >
+    {item.name}
+  </Link>
+))}
         </div>
 
         {/* Contact Button (Desktop) */}
