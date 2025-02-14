@@ -9,7 +9,6 @@ import Childcare from "./Pages/Services/Serves/Childcare.jsx";
 import Domestic  from "./Pages/Services/Serves/Domestic.jsx";
 import ContactUs from "./Components/Contactus.jsx"
 
-
 import { BrowserRouter as Router ,  Routes, Route  } from "react-router-dom"
 
 function App() {
