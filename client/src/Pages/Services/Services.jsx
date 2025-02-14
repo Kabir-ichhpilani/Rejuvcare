@@ -69,9 +69,9 @@ export default function Services() {
                 Our compassionate team provides assistance with daily activities, companionship, and health monitoring,
                 ensuring that your loved ones live their golden years with dignity and joy.
               </p>
-              <button className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl">
+             <a href="/services/elderly"><button  className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl">
                 Know More
-              </button>
+              </button> </a>
             </div>
           </div>
         </div>
@@ -105,9 +105,9 @@ export default function Services() {
                 From assisting with daily routines to providing educational and emotional support, our team is here to
                 help children thrive while bringing you peace of mind.
               </p>
-              <button className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl">
+             <a  href="/services/childcare"> <button className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl">
                 Know More
-              </button>
+             </button> </a>
             </div>
 
             {/* Image Section - Right */}
@@ -152,9 +152,9 @@ export default function Services() {
                 Our trained staff assists with cleaning, meal preparation, and other essential chores, giving you more
                 time to focus on what truly matters.
               </p>
-              <button className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl">
+              <a href="/services/domestic"><button className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl">
                 Know More
-              </button>
+              </button></a>
             </div>
           </div>
         </div>
