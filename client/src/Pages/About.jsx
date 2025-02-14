@@ -235,6 +235,7 @@ t
                         className="object-contain w-[55%] h-full opacity-100"
                     />
                 </div>
+
                 <div className="max-w-3xl">
                     <h1 className="text-3xl font-urbanist-regular md:text-4xl leading-relaxed ">
                         At Rejuvcare, we're dedicated to{' '}
