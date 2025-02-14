@@ -1,28 +1,37 @@
 import React from 'react';
-import { Users, Heart, HeartPulse, UserCheck, Award, Calendar,Smile,Brain } from 'lucide-react';
+import { useState } from 'react';
+import impimg1 from '../../../assets/Group 53.png'
+import impimg2 from '../../../assets/Group 54.png'
+import impimg3 from '../../../assets/Group 66.png'
+import impimg4 from '../../../assets/Group 67.png'
+import { Users, Heart, HeartPulse, UserCheck, Award, Calendar,Smile,Brain,Plus, Minus } from 'lucide-react';
 import img1 from '../../../assets/Frame 55.png'
 import img2 from '../../../assets/portrait-african-young-nurse-helping-old-elderly-disable-man-grandfather-walk-using-walker-equipment-bedroom-senior-patient-nursing-home-moving-with-walking-frame-nurse-support.png'
+import img3 from '../../../assets/image.png'
+
+import {  } from 'lucide-react';
 const ServiceCard = ({ icon: Icon, title, description }) => (
-    <div className="bg-[#E9EFDE] p-6 w-[300px]  rounded-lg">
-        <Icon className="w-8 h-8 text-emerald-600 mb-4" />
-        <h3 className="text-2xl font-urbanist-bold mb-2">{title}</h3>
-        <p className="text-gray-600 font-urbanist-medium text-sm">{description}</p>
+    <div className="bg-[#E9EFDE] p-6 w-[99%] md:w-[90%] lg:w-[300px] lg:h-[255px] xl:w-[370px] xl:h-[296px]  rounded-lg">
+        <Icon className="w-8 h-8 text-[#3D864B] mb-4" />
+        <h3 className="  text-[30px] xl:text-[36px] font-urbanist-semibold mb-2">{title}</h3>
+        <p className="text-gray-600 font-urbanist-medium text-[15px] xl:text-[21px]">{description}</p>
     </div>
 );
 
 const BenefitItem = ({ icon: Icon, title, description }) => (
     <div className="flex items-start space-x-4 mb-6">
-        <div className="bg-green-50 p-2 rounded-full">
-            <Icon className="w-6 h-6 text-emerald-600" />
+        <div className="bg-[#E9EFDE] p-2 rounded-full">
+            <Icon className="w-6 h-6 text-[#3D864B]" />
         </div>
         <div>
-            <h3 className="font-semibold mb-1">{title}</h3>
-            <p className="text-gray-600 text-sm">{description}</p>
+            <h3 className="font-semibold md:text-sm lg:text-2xl mb-1">{title}</h3>
+            <p className="text-gray-600 md:text-sm lg:text-2xl">{description}</p>
         </div>
     </div>
 );
 
 const Elderly = () => {
+    const [openIndex, setOpenIndex] = useState(5);
     const services = [
         {
             icon: Users,
@@ -72,6 +81,32 @@ const Elderly = () => {
             description: "Fostering meaningful connections and reducing loneliness"
         }
     ];
+    const faqs = [
+        {
+            question: "What types of tasks can your caregivers assist with?",
+            answer: "Our caregivers can assist with daily living activities, medication reminders, meal preparation, light housekeeping, transportation, and personal care tasks. We tailor our services to meet each client's specific needs."
+        },
+        {
+            question: "Can I customize the care plan for my loved one?",
+            answer: "Yes, we create personalized care plans based on individual needs, preferences, and schedules. Our care plans are flexible and can be adjusted as needs change."
+        },
+        {
+            question: "Are your caregivers trained for specialized care?",
+            answer: "All our caregivers undergo comprehensive training in elderly care, safety protocols, and emergency response. Many also have specialized training in dementia care, post-surgery recovery, and other specific conditions."
+        },
+        {
+            question: "How do you ensure safety during caregiving?",
+            answer: "We maintain strict safety protocols, conduct regular training, perform background checks on all caregivers, and maintain emergency response procedures. We also regularly assess the home environment for potential hazards."
+        },
+        {
+            question: "Can services be scheduled for specific hours or days?",
+            answer: "Yes, we offer flexible scheduling options including hourly, daily, or live-in care. We work with families to create a schedule that best meets their needs and preferences."
+        },
+        {
+            question: "What if my loved one's needs change over time?",
+            answer: "We regularly reassess care plans to adapt to any changes, ensuring continued support and comfort for your loved one."
+        }
+    ];
 
     return (
 
@@ -87,7 +122,7 @@ const Elderly = () => {
             </div>
 
             {/* Content Overlay */}
-            <div className="absolute z-10 max-w-4xl flex justify-center py-30   px-24">
+            <div className="absolute z-10 max-w-4xl flex justify-center py-30  lg:px-20 ">
                 <div className="max-w-xl">
                     <h1 className="text-4xl md:text-5xl font-urbanist-bold leading-[52px] text-white mb-6">
                         Elderly Care <br/>Services
@@ -103,12 +138,12 @@ const Elderly = () => {
                 </div>
             </div>
         </div>
-           <div className="py-16 px-4 max-w-7xl mx-auto">
-               <h2 className="text-3xl font-semibold text-center mb-12">
-                   Why Choose Our <span className="text-emerald-600">Elderly Care</span> Services
+           <div className="py-16 px-4 max-w-9xl mx-auto">
+               <h2 className="text-[36px] font-semibold text-center mb-12">
+                   Why Choose Our <span className="text-[#3D864B]">Elderly Care</span> Services
                </h2>
 
-               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 gap-x-0 md:px-12 lg:px-4 xl:px-28">
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-0 md:px-2 lg:px-4 xl:px-14">
                    {services.map((service, index) => (
                        <ServiceCard
                            key={index}
@@ -119,17 +154,18 @@ const Elderly = () => {
                    ))}
                </div>
            </div>
-           <div className="py-16 px-4">
-               <div className="max-w-7xl mx-auto">
+           <div className="py-16 ">
+               <div className="max-w-8xl xl:pl-28">
+                   <img src={impimg2} className="absolute w-100  opacity-100 -left-[0%] h-100"/>
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                        {/* Left Content */}
-                       <div>
-                           <h2 className="text-4xl font-bold mb-8">
+                       <div className="max-w-[550px] md:pl-12">
+                           <h2 className="lg:text-5xl md:text-2xl font-urbanist-bold mb-8">
                                Empowering Seniors With{' '}
-                               <span className="text-emerald-600">Compassionate Support</span>
+                               <span className="text-[#3D864B]">Compassionate Support</span>
                            </h2>
 
-                           <div className="space-y-6">
+                           <div className="space-y-6 ">
                                {benefits.map((benefit, index) => (
                                    <BenefitItem
                                        key={index}
@@ -142,24 +178,101 @@ const Elderly = () => {
                        </div>
 
                        {/* Right Image */}
-                       <div className="rounded-2xl overflow-hidden ">
+
                            <img
                                src={img2}
                                alt="Caregiver assisting senior"
-                               className="w-[550px] h-[500px] object-cover"
+                               className="w-auto lg:h-[500px] md:h-[300px]  lg:px-6 object-cover rounded-2xl"
                            />
                        </div>
-                   </div>
+
 
                    {/* Bottom Message */}
-                   <div className="mt-16 text-center max-w-3xl mx-auto bg-green-50 p-8 rounded-lg">
-                       <p className="text-xl">
-                           Our service provides trusted elderly care solutions, promoting independence and dignity by{' '}
-                           <span className="bg-emerald-600 text-white px-2 py-1 rounded">simplifying tasks</span>
-                           {' '}and{' '}
-                           <span className="bg-emerald-600 text-white px-2 py-1 rounded">supporting well-being</span>.
-                       </p>
+
+               </div>
+
+           </div>
+           <div className="flex justify-center w-screen bg-[#E9EFDE] items-center text-center">
+
+               {/*<img src={impimg4} className="absolute w-60  opacity-100 left-[80%] h-60"/>*/}
+               <div className="max-w-3xl py-16 px-4 ">
+
+                   <p className="text-3xl font-urbanist-regular md:text-4xl leading-[49px]">
+                       Rejuvcare provides trusted elderly care solutions, promoting independence and<br/> dignity by{' '}
+                       <span className="inline-block font-urbanist-medium bg-[#3D864B] text-white px-3 py-1 rounded-md">simplifying tasks</span>
+                       {' '}and{' '}
+                       <span className="inline-block font-urbanist-medium bg-[#3D864B] mt-2 text-white px-3 py-1 rounded-md">supporting well-being</span>.
+                   </p>
+               </div>
+           </div>
+           <div className="py-16 px-4 bg-white">
+               <div className="max-w-7xl mx-auto">
+                   <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+                       {/* Left Image */}
+
+                           <img
+                               src={img3}
+                               alt="Senior receiving compassionate care"
+                               className="w-auto h-[554px] object-cover rounded-2xl pl-12"
+                           />
+
+
+                       {/* Right Content */}
+                       <div className="space-y-2 max-w-[550px] pl-0">
+                           <h2 className=" text-[35px] lg:text-[54px] leading-[62px] font-urbanist-bold ">
+                               Provide More Compassionate{' '}
+                               <span className="text-[#3D864B]">Care</span>
+                           </h2>
+
+                           <div className="space-y-4 max-w-[623px] text-[15px] lg:text-[21px]">
+                               <p className="text-gray-600 ">
+                                   As people age, maintaining independence and dignity becomes
+                                   increasingly important. However, daily challenges can often get in
+                                   the way of leading a fulfilling life.
+                               </p>
+
+                               <p className="text-gray-600">
+                                   Our service provides personalized elderly care services tailored to
+                                   individual needs. From assistance with daily tasks to health
+                                   monitoring and companionship, we ensure seniors receive the
+                                   support they need to live comfortably and confidently. With
+                                   our service, families can trust their loved ones are in caring, capable
+                                   hands.
+                               </p>
+                           </div>
+                       </div>
                    </div>
+               </div>
+           </div>
+           <div className="py-16 px-4 md:px-10 lg:px-24 mx-auto">
+               <h2 className="text-[36px] font-urbanist-bold text-center mb-8">
+                   <span className="text-[#3D864B]">Still Have Questions?</span>
+               </h2>
+
+               <div className="space-y-4 ">
+                   {faqs.map((faq, index) => (
+                       <div key={index} className="border-b-2 border-black  last:border-b-0">
+                           <button
+                               className="w-full py-4 flex justify-between items-center text-left"
+                               onClick={() => setOpenIndex(openIndex === index ? -1 : index)}
+                           >
+                               <span className="font-urbanist-medium text-2xl">{faq.question}</span>
+                               {openIndex === index ? (
+                                   <Minus className="h-5 w-5 text-[#3D864B] shrink-0 ml-4" />
+                               ) : (
+                                   <Plus className="h-5 w-5 text-[#3D864B] shrink-0 ml-4" />
+                               )}
+                           </button>
+
+                           <div
+                               className={`overflow-hidden transition-all duration-300 ease-in-out ${
+                                   openIndex === index ? 'max-h-48' : 'max-h-0'
+                               }`}
+                           >
+                               <p className="py-4 text-gray-600  font-urbanist-regular text-2xl">{faq.answer}</p>
+                           </div>
+                       </div>
+                   ))}
                </div>
            </div>
        </div>
