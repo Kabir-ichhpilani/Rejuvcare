@@ -4,24 +4,37 @@ import impimg1 from '../../../assets/Group 53.png'
 import impimg2 from '../../../assets/Group 54.png'
 import impimg3 from '../../../assets/Group 66.png'
 import impimg4 from '../../../assets/Group 67.png'
-import { Users, Heart, HeartPulse, UserCheck, Award, Calendar,Smile,Brain,Plus, Minus } from 'lucide-react';
+import { Plus, Minus } from 'lucide-react';
 import img1 from '../../../assets/Frame 55.png'
 import img2 from '../../../assets/portrait-african-young-nurse-helping-old-elderly-disable-man-grandfather-walk-using-walker-equipment-bedroom-senior-patient-nursing-home-moving-with-walking-frame-nurse-support.png'
 import img3 from '../../../assets/image.png'
+import icon1 from '../../../assets/Vector (6).png'
+import icon2 from '../../../assets/Vector (7).png'
+import icon3 from '../../../assets/Vector (8).png'
+import icon4 from '../../../assets/Vector (9).png'
+import icon5 from '../../../assets/Vector (10).png'
+import icon6 from '../../../assets/Vector (11).png'
+import icon7 from '../../../assets/Vector (12).png'
+import icon8 from '../../../assets/Vector (13).png'
+import icon9 from '../../../assets/Vector (14).png'
 
 import {  } from 'lucide-react';
-const ServiceCard = ({ icon: Icon, title, description }) => (
-    <div className="bg-[#E9EFDE] p-6 w-[99%] md:w-[90%] lg:w-[300px] lg:h-[255px] xl:w-[370px] xl:h-[296px]  rounded-lg">
-        <Icon className="w-8 h-8 text-[#3D864B] mb-4" />
-        <h3 className="  text-[30px] xl:text-[36px] font-urbanist-semibold mb-2">{title}</h3>
-        <p className="text-gray-600 font-urbanist-medium text-[15px] xl:text-[21px]">{description}</p>
+const ServiceCard = ({ icon, title, description }) => (
+    <div className="bg-[#E9EFDE] p-6 w-full max-w-[400px] md:max-w-[350px] lg:max-w-[380px] xl:max-w-[420px] h-auto rounded-lg mx-auto">
+        <img src={icon} className="w-10 h-10 text-[#3D864B] mb-4" />
+        <h3 className="text-[24px] lg:text-[28px] xl:text-[32px] font-urbanist-semibold mb-2">
+            {title}
+        </h3>
+        <p className="text-gray-600 font-urbanist-medium text-[14px] lg:text-[18px] xl:text-[20px]">
+            {description}
+        </p>
     </div>
 );
 
-const BenefitItem = ({ icon: Icon, title, description }) => (
+const BenefitItem = ({  icon, title, description }) => (
     <div className="flex items-start space-x-4 mb-6">
-        <div className="bg-[#E9EFDE] p-2 rounded-full">
-            <Icon className="w-6 h-6 text-[#3D864B]" />
+        <div className="bg-[#E9EFDE] p-4 rounded-2xl ">
+            <img src={icon} className="md:w-17 md:h-12 sm:w-14 sm:h-11  lg:w-20 lg:h-14 text-[#3D864B] " />
         </div>
         <div>
             <h3 className="font-semibold md:text-sm lg:text-2xl mb-1">{title}</h3>
@@ -34,49 +47,49 @@ const Elderly = () => {
     const [openIndex, setOpenIndex] = useState(5);
     const services = [
         {
-            icon: Users,
+            icon: icon7,
             title: "Personalized Care",
             description: "Tailored support for each individual's unique needs."
         },
         {
-            icon: Heart,
+            icon: icon8,
             title: "Companionship",
             description: "Building meaningful relationships with seniors."
         },
         {
-            icon: HeartPulse,
+            icon: icon1,
             title: "Health Monitoring",
             description: "Regular monitoring to ensure optimal well-being."
         },
         {
-            icon: UserCheck,
+            icon: icon2,
             title: "Professional Caregivers",
             description: "Trained, experienced, and compassionate professionals."
         },
         {
-            icon: Award,
+            icon: icon3,
             title: "Independence Support",
             description: "Helping seniors maintain dignity and independence."
         },
         {
-            icon: Calendar,
+            icon: icon6,
             title: "Flexible Scheduling",
             description: "Care that adapts to your family's schedule."
         }
     ];
     const benefits = [
         {
-            icon: Heart,
+            icon: icon1,
             title: "Enhanced Quality of Life",
             description: "Personalized care plans to promote independence and dignity"
         },
         {
-            icon: Smile,
+            icon: icon6,
             title: "Peace of Mind for Families",
             description: "Professional caregivers ensuring safety and well-being for loved ones"
         },
         {
-            icon: Brain,
+            icon: icon9,
             title: "Emotional and Mental Well-Being",
             description: "Fostering meaningful connections and reducing loneliness"
         }
@@ -138,12 +151,12 @@ const Elderly = () => {
                 </div>
             </div>
         </div>
-           <div className="py-16 px-4 max-w-9xl mx-auto">
+           <div className="py-16 px-4 max-w-[1440px] mx-auto">
                <h2 className="text-[36px] font-semibold text-center mb-12">
                    Why Choose Our <span className="text-[#3D864B]">Elderly Care</span> Services
                </h2>
 
-               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-4 gap-x-0 md:px-2 lg:px-4 xl:px-14">
+               <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-y-6 gap-x-6 md:px-6 lg:px-10 xl:px-16">
                    {services.map((service, index) => (
                        <ServiceCard
                            key={index}
@@ -192,11 +205,11 @@ const Elderly = () => {
                </div>
 
            </div>
-           <div className="flex justify-center w-screen bg-[#E9EFDE] items-center text-center">
+           <div className="flex justify-center w-screen bg-[#E9EFDE] items-center text-center relative">
+               {/* Positioned image similar to the screenshot */}
+               <img src={impimg4} className="absolute w-60 opacity-100 right-2 top-5/8 transform -translate-y-1/2 h-60" />
 
-               {/*<img src={impimg4} className="absolute w-60  opacity-100 left-[80%] h-60"/>*/}
-               <div className="max-w-3xl py-16 px-4 ">
-
+               <div className="max-w-3xl py-16 px-4">
                    <p className="text-3xl font-urbanist-regular md:text-4xl leading-[49px]">
                        Rejuvcare provides trusted elderly care solutions, promoting independence and<br/> dignity by{' '}
                        <span className="inline-block font-urbanist-medium bg-[#3D864B] text-white px-3 py-1 rounded-md">simplifying tasks</span>
@@ -205,38 +218,47 @@ const Elderly = () => {
                    </p>
                </div>
            </div>
-           <div className="py-16 px-4 bg-white">
+
+           <div className="py-16 px-4 bg-white relative">
                <div className="max-w-7xl mx-auto">
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
-                       {/* Left Image */}
+                       {/* Left Image with Background */}
+                       <div className="relative sm:pl-4 md:pl-12">
+                           {/* Faded Background Image (Correct Positioning) */}
+                           <img
+                               src={impimg3} // Replace with actual background image
+                               alt="Decorative background"
+                               className="absolute left-[-120px] top-[70px] lg:w-[70%] h-auto object-contain opacity-0 lg:opacity-100 z-50"
+                           />
 
+                           {/* Main Foreground Image */}
                            <img
                                src={img3}
                                alt="Senior receiving compassionate care"
-                               className="w-auto h-[554px] object-cover rounded-2xl pl-12"
+                               className="relative w-auto h-[554px] z-50 object-cover rounded-2xl shadow-lg"
                            />
-
+                       </div>
 
                        {/* Right Content */}
-                       <div className="space-y-2 max-w-[550px] pl-0">
-                           <h2 className=" text-[35px] lg:text-[54px] leading-[62px] font-urbanist-bold ">
+                       <div className="space-y-2 max-w-[550px]">
+                           <h2 className="text-[35px] lg:text-[54px] leading-[62px] font-urbanist-bold">
                                Provide More Compassionate{' '}
                                <span className="text-[#3D864B]">Care</span>
                            </h2>
 
                            <div className="space-y-4 max-w-[623px] text-[15px] lg:text-[21px]">
-                               <p className="text-gray-600 ">
+                               <p className="text-gray-600">
                                    As people age, maintaining independence and dignity becomes
                                    increasingly important. However, daily challenges can often get in
                                    the way of leading a fulfilling life.
                                </p>
 
                                <p className="text-gray-600">
-                                   Our service provides personalized elderly care services tailored to
+                                   Rejuvcare provides personalized elderly care services tailored to
                                    individual needs. From assistance with daily tasks to health
                                    monitoring and companionship, we ensure seniors receive the
                                    support they need to live comfortably and confidently. With
-                                   our service, families can trust their loved ones are in caring, capable
+                                   Rejuvcare, families can trust their loved ones are in caring, capable
                                    hands.
                                </p>
                            </div>
@@ -244,6 +266,9 @@ const Elderly = () => {
                    </div>
                </div>
            </div>
+
+
+
            <div className="py-16 px-4 md:px-10 lg:px-24 mx-auto">
                <h2 className="text-[36px] font-urbanist-bold text-center mb-8">
                    <span className="text-[#3D864B]">Still Have Questions?</span>
