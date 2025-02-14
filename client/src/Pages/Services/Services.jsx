@@ -9,8 +9,11 @@ import tailored from "../../assets/services/tailored.png"
 import reliability from "../../assets/services/reliability.png"
 import compassion from "../../assets/services/compassion.png"
 import React from "react"
+import { useNavigate } from "react-router-dom"
 
 export default function Services() {
+    const navigate=useNavigate();
+
   return (
     <div className="font-['Urbanist'] w-full overflow-hidden">
       {/* Hero Section */}
@@ -69,7 +72,7 @@ export default function Services() {
                 Our compassionate team provides assistance with daily activities, companionship, and health monitoring,
                 ensuring that your loved ones live their golden years with dignity and joy.
               </p>
-              <button className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl">
+              <button onClick={()=>{navigate('/services/elderly')}} className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer">
                 Know More
               </button>
             </div>
