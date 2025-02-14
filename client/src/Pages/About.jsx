@@ -6,8 +6,11 @@ import img4 from "../assets/Group 3.png";
 import img5 from "../assets/f739ff8e-6f71-4f58-965d-2a48a3f786b0-Photoroom.png";
 import img6 from "../assets/Group 11.png";
 import { Heart, User2, Shield, Clock } from 'lucide-react';
+import { useNavigate } from 'react-router-dom';
+
 
 const About = () => {
+    const navigate=useNavigate();
     return (
         <div >
             {/* Hero Section */}
@@ -25,12 +28,12 @@ const About = () => {
                                 At Rejuvcare, we believe in more than just care – we believe in empowering lives. Bringing warmth,
                                 dignity, and compassion to<br/> every step of your journey towards independence and vitality.
                             </p>
-                            <a
-                                href="#contact"
-                                className="inline-block bg-[#3d864b] shadow-sm shadow-[#adcf5b] text-white px-6 md:px-8 py-3 rounded-lg hover:bg-[#3d8f5d] transition-colors"
+                            <button
+                                onClick={()=>{navigate('/contactus')}}
+                                className="inline-block cursor-pointer bg-[#3d864b] shadow-sm shadow-[#adcf5b] text-white px-6 md:px-8 py-3 rounded-lg hover:bg-[#3d8f5d] transition-colors"
                             >
                                 Contact Us
-                            </a>
+                            </button>
                         </div>
 
                         {/* Image Section */}

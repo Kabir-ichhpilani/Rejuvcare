@@ -5,7 +5,59 @@ import carousel1 from "../assets/carousel1.png"
 import carousel2 from "../assets/carousel2.png"
 import carousel3 from "../assets/carousel3.png"
 import carousel4 from "../assets/carousel4.png"
-import approachcare from "../assets/approachcare.png"
+import approachcare from "../assets/personalizedcare.png"
+import trustedsupport from "../assets/trustedsupport.png"
+import independence from "../assets/independence.png"
+import p1 from '../assets/p1.png'
+import p2 from '../assets/p2.png'
+import p3 from '../assets/p3.png'
+import p4 from '../assets/p4.png'
+import t1 from '../assets/t1.png'
+import t2 from '../assets/t2.png'
+import t3 from '../assets/t3.png'
+import t4 from '../assets/t4.png'
+import o1 from '../assets/o1.png'
+import o2 from '../assets/o2.png'
+import o3 from '../assets/o3.png'
+import o4 from '../assets/o4.png'
+const tabsData = {
+    "Personalized Care": {
+      title: "Personalized Care",
+      description:
+        "We craft tailored care that respects your unique needs, preferences, and lifestyle for a truly personalized experience.",
+      image: approachcare,
+      features: [
+        { icon: p1, text: "Respecting Preferences" },
+        { icon: p2, text: "Holistic Support" },
+        { icon: p3, text: "Individualized Approach" },
+        { icon: p4, text: "Focused Well-Being" },
+      ],
+    },
+    "Trusted Support": {
+      title: "Trusted Support",
+      description:
+        "Your safety and comfort are our priorities. Our compassionate caregivers are handpicked to feel like family.",
+      image: trustedsupport,
+      features: [
+        { icon: t1, text: "Experienced Caregivers" },
+        { icon: t2, text: "Compassionate Approach" },
+        { icon: t3, text: "Family-Like Care" },
+        { icon: t4, text: "Reliable Assistance" },
+      ],
+    },
+    "Independence First": {
+      title: "Independence First",
+      description: "We empower you to maintain your independence and dignity, living life on your own terms.",
+      image: independence,
+      features: [
+        { icon: o1, text: "Empowering Lives" },
+        { icon: o2, text: "Dignified Assistance" },
+        { icon: o3, text: "Encouraging Freedom" },
+        { icon: o4, text: "Respectful Support" },
+      ],
+    },
+  }
+
 import elderlycare from "../assets/elderlycare.png"
 import childcare from "../assets/childcare.jpg"
 import colouredcross from "../assets/colouredcross.png"
@@ -15,11 +67,13 @@ import hitrust from "../assets/hitrust.png"
 
 export default function Home() {
   const [hoveredItem, setHoveredItem] = useState("Elderly Care")
+  const tabs = Object.keys(tabsData)
   const [selectedTab, setSelectedTab] = useState("Personalized Care")
 
-  const tabs = ["Personalized Care", "Trusted Support", "Independence First"]
+
 
   const serviceOptions = ["Elderly Care", "Child Care", "Domestic Help Care"]
+  
 
   return (
     <div className="bg-[#ECF1E5] text-green-900">
@@ -114,65 +168,59 @@ export default function Home() {
       </div>
 
       <div className="bg-[#ADCF5B33] px-4 py-8 sm:py-12 md:px-16 lg:px-32">
-        {/* Heading */}
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-montserrat-semibold text-black text-center">
-          Our Approach to Care
-        </h2>
-        {/* Tabs */}
-        <div className="flex flex-wrap justify-center text-center mt-6 font-montserrat-regular bg-white rounded-full p-2 sm:p-3 max-w-full sm:max-w-[90%] md:max-w-[80%] lg:max-w-[70%] xl:max-w-[70%] mx-auto">
-          {tabs.map((tab) => (
-            <button
-              key={tab}
-              onClick={() => setSelectedTab(tab)}
-              className={`px-3 sm:px-4 md:px-6 py-2 text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-2xl rounded-full cursor-pointer transition duration-300 mb-2 sm:mb-0 ${
-                selectedTab === tab ? "bg-green-700 text-white" : "text-black"
-              }`}
-            >
-              {tab}
-            </button>
-          ))}
+      {/* Heading */}
+      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-montserrat-semibold text-black text-center">
+        Our Approach to Care
+      </h2>
+
+      {/* Tabs */}
+      <div className="flex flex-wrap justify-center text-center mt-6 font-montserrat-regular bg-white rounded-full p-2 sm:p-3 max-w-full sm:max-w-[90%] md:max-w-[90%] lg:max-w-[80vw] xl:max-w-[70%] mx-auto">
+        {tabs.map((tab) => (
+          <button
+            key={tab}
+            onClick={() => setSelectedTab(tab)}
+            className={`px-3 sm:px-4 md:px-6 py-2 text-sm sm:text-base md:text-lg cursor-pointer lg:text-xl 2xl:text-2xl rounded-full  transition duration-300 mb-2 sm:mb-0 ${
+              selectedTab === tab ? "bg-green-700 text-white" : "text-black"
+            }`}
+          >
+            {tab}
+          </button>
+        ))}
+      </div>
+
+      {/* Content Section */}
+      <div className="mt-8 sm:mt-10 flex flex-col lg:flex-row items-center">
+        {/* Left Content */}
+        <div className="lg:w-1/2 text-left">
+          <h3 className="text-xl sm:text-[48px] font-semibold cursor-pointer">{tabsData[selectedTab].title}</h3>
+          <p className="mt-4 text-[#000000] text-sm sm:text-[28px]">{tabsData[selectedTab].description}</p>
+
+          {/* Features List */}
+          <ul className="mt-6 space-y-3 text-base sm:text-lg font-semibold">
+            {tabsData[selectedTab].features.map((feature, index) => (
+              <li key={index} className="flex items-center gap-2">
+                <img src={feature.icon || "/placeholder.svg"} alt="" className="w-6 h-6" />
+                <span className="hover:underline cursor-pointer text-[28px]">{feature.text}</span>
+              </li>
+            ))}
+          </ul>
+
+          {/* About Link */}
+          <div className="mt-6 flex items-center text-black font-medium text-[26px] cursor-pointer hover:underline">
+            About Rejuvcare →
+          </div>
         </div>
-        {/* Content Section */}
-        <div className="mt-8 sm:mt-10 flex flex-col lg:flex-row items-center">
-          {/* Left Content */}
-          <div className="lg:w-1/2 text-left">
-            <h3 className="text-xl sm:text-2xl font-semibold">{selectedTab}</h3>
-            <p className="mt-4 text-gray-600 text-sm sm:text-base">
-              We craft tailored care that respects your unique needs, preferences, and lifestyle for a truly
-              personalized experience.
-            </p>
-            {/* Features List */}
-            <ul className="mt-6 space-y-3 text-base sm:text-lg font-semibold">
-              <li className="flex items-center gap-2">
-                👐 <span className="hover:underline cursor-pointer">Respecting Preferences</span>
-              </li>
-              <li className="flex items-center gap-2">
-                👥 <span className="hover:underline cursor-pointer">Holistic Support</span>
-              </li>
-              <li className="flex items-center gap-2">
-                🔍 <span className="hover:underline cursor-pointer">Individualized Approach</span>
-              </li>
-              <li className="flex items-center gap-2">
-                ❤️ <span className="hover:underline cursor-pointer">Focused Well-Being</span>
-              </li>
-            </ul>
 
-            {/* About Link */}
-            <div className="mt-6 flex items-center text-black font-medium cursor-pointer hover:underline">
-              About Rejuvcare →
-            </div>
-          </div>
-
-          {/* Right Image */}
-          <div className="lg:w-1/2 mt-6 lg:mt-0">
-            <img
-              src={approachcare || "/placeholder.svg"}
-              alt="Approach to Care"
-              className="rounded-xl w-full shadow-md"
-            />
-          </div>
+        {/* Right Image */}
+        <div className="lg:w-1/2 mt-6 lg:mt-0">
+          <img
+            src={tabsData[selectedTab].image || "/placeholder.svg"}
+            alt={`${selectedTab} Illustration`}
+            className="rounded-xl w-full shadow-md"
+          />
         </div>
       </div>
+    </div>
 
       {/* Testimonials Section */}
       <div className="p-6 md:p-12 text-center bg-white">

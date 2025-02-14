@@ -95,7 +95,7 @@ export default function Services() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-14 items-end justify-between">
             {/* Content Section - Left */}
             <div className="space-y-4 sm:space-y-6 order-2 lg:order-1">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[45px] 2xl:text-[72px] font-bold leading-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[45px] 2xl:text-[54px] font-bold leading-tight">
                 Trusted and Nurturing
                 <br />
                 <span className="text-[#3D864B]">Child Care</span>
@@ -108,7 +108,7 @@ export default function Services() {
                 From assisting with daily routines to providing educational and emotional support, our team is here to
                 help children thrive while bringing you peace of mind.
               </p>
-              <button className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl">
+              <button onClick={()=>{navigate('/services/childcare')}} className="bg-[#3D864B] cursor-pointer text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl">
                 Know More
               </button>
             </div>
@@ -142,10 +142,10 @@ export default function Services() {
               />
             </div>
             <div className="space-y-4 sm:space-y-6 order-1 lg:order-2">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[45px] 2xl:text-[72px] font-bold leading-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[45px] 2xl:text-[54px] font-bold leading-tight">
                 Reliable Domestic Help
-                <br />
-                <span className="text-[#3D864B]">for a Stress-Free Home</span>
+          
+                <span className="text-[#3D864B]">  for a Stress-Free Home</span>
               </h2>
               <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-[28px]">
                 Maintaining a well-run home shouldn't be a burden. Rejuvcare's domestic help services take the stress
@@ -155,7 +155,7 @@ export default function Services() {
                 Our trained staff assists with cleaning, meal preparation, and other essential chores, giving you more
                 time to focus on what truly matters.
               </p>
-              <button className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl">
+              <button onClick={()=>{navigate('/services/domestic')}} className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 cursor-pointer sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl">
                 Know More
               </button>
             </div>

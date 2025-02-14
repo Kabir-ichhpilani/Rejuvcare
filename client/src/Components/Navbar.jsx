@@ -37,7 +37,7 @@ export default function Navbar() {
 
         {/* Contact Button (Desktop) */}
         <a
-          href="/contact"
+          href="/contactus"
           className="hidden md:flex w-[160px] h-[50px] items-center justify-center gap-[10px] bg-[#3D864B] text-white text-lg font-urbanist rounded-[8px] border-r-[4px] border-b-[5px] border-[#ADCF5B] px-[24px] py-[22px] hover:bg-[#3d6f44] transition-all"
         >
           Contact Us
@@ -52,11 +52,15 @@ export default function Navbar() {
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden flex flex-col items-center gap-6 bg-white py-6 shadow-md">
-          {["Home", "About Us", "Services", "Certifications"].map((item, index) => (
-            <p key={index} className="font-urbanist text-[#101010] text-lg font-urbanist-medium transition-colors cursor-pointer">
-              {item}
-            </p>
-          ))}
+        {navItems.map((item, index) => (
+  <Link
+    key={index}
+    to={item.path}
+    className="font-urbanist text-[#101010] text-lg font-urbanist-medium transition-colors cursor-pointer"
+  >
+    {item.name}
+  </Link>
+))}
 
           <a
             href="/contact"
