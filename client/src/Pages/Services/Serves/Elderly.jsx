@@ -169,7 +169,7 @@ const Elderly = () => {
            </div>
            <div className="py-16 ">
                <div className="max-w-8xl xl:pl-28">
-                   <img src={impimg2} className="absolute w-100  opacity-40 -left-[0%] h-100"/>
+                   <img src={impimg2} className="absolute w-100  opacity-30 -left-[0%] h-100"/>
                    <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                        {/* Left Content */}
                        <div className="max-w-[550px] px-4 md:pl-12">

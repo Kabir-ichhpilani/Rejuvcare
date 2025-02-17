@@ -70,13 +70,13 @@ const Footer = () => {
         {/* Right Section - Certifications */}
  
       </div>
-      <div className=" lg:absolute xl:lg:bottom-14 left-4 lg:left-auto  lg:right-16 flex flex-col sm:flex-row gap-6 sm:gap-10 mb-16 items-start lg:items-center">
+      <div className=" lg:absolute xl:lg:bottom-14 left-4 lg:left-auto  lg:right-16 flex flex-row pr-4 sm:pr-0 sm:flex-row gap-6 sm:gap-10 mb-16 items-start lg:items-center">
           {[
             { src: hipaa, alt: "HIPAA Compliant" },
             { src: hitrust, alt: "HITRUST Certified" },
             { src: pci, alt: "PCI Compliant" },
           ].map((cert) => (
-            <img key={cert.alt} src={cert.src || "/placeholder.svg"} alt={cert.alt} className="h-8 sm:h-10" />
+            <img key={cert.alt} src={cert.src || "/placeholder.svg"} alt={cert.alt} className="h-7 sm:h-10" />
           ))}
         </div>
 

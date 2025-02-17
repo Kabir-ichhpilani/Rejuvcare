@@ -16,7 +16,7 @@ const About = () => {
             {/* Hero Section */}
             <div className="w-full px-4 md:px-6 lg:px-8 xl:px-10">
                 <div className="max-w-7xl mx-auto">
-                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center  pt-20 pb-16 relative">
+                    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 items-center sm:pb-16 relative">
                         {/* Text Content */}
                         <div className="space-y-6 z-20 pt-8 pr-10 w-full md:text-left sm:text-center xl:w-[750px] lg:max-w-[900px]">
                             <img src={img4} alt="Background shape" className="absolute w-[250px] sm:w-[250px] md:w-[310px] lg:w-[380px] xl:w-[440px] xl:-left-28 xl:top-8 -left-10 top-0" />
@@ -37,13 +37,13 @@ const About = () => {
                         </div>
 
                         {/* Image Section */}
-                        <div className="   hidden lg:block relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
+                        <div className="   sm:block relative w-full h-[400px] sm:h-[400px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
                             {/* Background shape */}
                             <div className="absolute -top-6 lg:top-2 left-0 sm:left-6 md:left-12 lg:left-10 xl: w-full md:w-[300px] lg:w-[400px] xl:left-24 pr-10 xl:w-[550px] h-full">
                                 <img
                                     src={img1}
                                     alt="Background shape"
-                                    className="object-contain absolute right-0 z-20 w-full h-full"
+                                    className="object-contain absolute right-0 z-20 w-full h-96  sm:h-full"
                                 />
                             </div>
 

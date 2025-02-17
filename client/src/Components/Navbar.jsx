@@ -44,7 +44,7 @@ export default function Navbar() {
         </a>
 
         {/* Mobile Menu Button */}
-        <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-[#101010] text-2xl">
+        <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-[#101010] text-3xl">
           {menuOpen ? <FiX /> : <FiMenu />}
         </button>
       </div>
@@ -56,7 +56,8 @@ export default function Navbar() {
   <Link
     key={index}
     to={item.path}
-    className="font-urbanist text-[#101010] text-lg font-urbanist-medium transition-colors cursor-pointer"
+    onClick={()=>{setMenuOpen(false)}}
+    className="font-urbanist text-[#101010] text-lg  font-urbanist-medium transition-colors cursor-pointer"
   >
     {item.name}
   </Link>

@@ -1,4 +1,5 @@
 import React, { useState } from "react"
+import { useNavigate } from "react-router-dom"
 import { Carousel } from "react-responsive-carousel"
 import "react-responsive-carousel/lib/styles/carousel.min.css"
 import carousel1 from "../assets/carousel1.png"
@@ -66,13 +67,20 @@ import hipaacomplient from "../assets/hipaacomplient.png"
 import hitrust from "../assets/hitrust.png"
 
 export default function Home() {
+  const navigate=useNavigate();
   const [hoveredItem, setHoveredItem] = useState("Elderly Care")
   const tabs = Object.keys(tabsData)
   const [selectedTab, setSelectedTab] = useState("Personalized Care")
+  const [servicelines, setServiceLines] = useState("Eldery Care")
 
 
 
   const serviceOptions = ["Elderly Care", "Child Care", "Domestic Help Care"]
+  const serviceContent = {
+    "Elderly Care":"Our Elderly Care services focus on providing dignity, comfort, and support, ensuring physical well-being, emotional balance, and companionship in the golden years. From daily assistance to health monitoring, we’re here to make life easier.",
+    "Child Care":"Our Child Care services are tailored to nurture young minds and bodies. Whether it’s educational support, daycare, or emotional development, we ensure your children are safe, happy, and thriving in our care.",
+    "Domestic Help Care":"Our Domestic Help Care services ensure that your home remains well-maintained, clean, and organized. From housekeeping to essential chores, we provide trusted and professional assistance to make daily living stress-free.",
+  };
   
 
   return (
@@ -124,7 +132,7 @@ export default function Home() {
           {serviceOptions.map((item) => (
             <div
               key={item}
-              className="group flex items-center gap-2 mb-4 md:mb-[-2vw] xl:mb-6"
+              className="group flex items-center gap-2 mb-4 md:mb-[-5vw] xl:mb-6"
               onMouseEnter={() => setHoveredItem(item)}
               onMouseLeave={() => setHoveredItem("Elderly Care")}
             >
@@ -146,7 +154,7 @@ export default function Home() {
               </span>
             </div>
           ))}
-          <button className="mt-4 bg-green-700 text-white px-4 sm:px-6 py-2 sm:py-3 md:px-8 md:py-4 font-montserrat-semibold rounded-md ml-4 sm:ml-[5vw] lg:ml-[4vw] xl:ml-[3vw] shadow-md text-sm sm:text-base">
+          <button onClick={()=>{navigate('/services')}} className="mt-4 bg-green-700 text-white px-4 sm:px-6 py-2 sm:py-3 md:px-8 md:py-4 font-montserrat-semibold rounded-md ml-4 sm:ml-[5vw] lg:ml-[4vw] xl:ml-[3vw] shadow-md text-sm sm:text-base">
             View All Specialities
           </button>
         </div>
@@ -158,12 +166,15 @@ export default function Home() {
           />
           <p className="text-lg sm:text-xl lg:text-[20px] xl:text-[24px] font-montserrat-semibold text-black">
             Compassionate care for aging loved ones.
-          </p>
+          </p>  
+          {hoveredItem && (
+         
           <span className="text-sm sm:text-base xl:text-[22px] lg:text-[18px] font-montserrat-regular text-[#101010]">
-            Our Elderly Care services focus on providing dignity, comfort, and support, ensuring physical well-being,
-            emotional balance, and companionship in the golden years. From daily assistance to health monitoring, we're
-            here to make life easier.
+            {serviceContent[hoveredItem]}
           </span>
+        )}
+        
+       
         </div>
       </div>
 
@@ -206,7 +217,7 @@ export default function Home() {
           </ul>
 
           {/* About Link */}
-          <div className="mt-6 flex items-center text-black font-medium text-[26px] cursor-pointer hover:underline">
+          <div  onClick={()=>{navigate('/about')}} className="mt-6 flex items-center text-black font-medium text-[26px] cursor-pointer hover:underline">
             About Rejuvcare →
           </div>
         </div>
