@@ -64,7 +64,7 @@ export default function Navbar() {
 ))}
 
           <a
-            href="/contact"
+            href="/contactus"
             className="w-[160px] h-[50px] flex items-center justify-center gap-[10px] bg-[#3D864B] text-white text-lg font-urbanist rounded-[8px] border-r-[4px] border-b-[5px] border-[#ADCF5B] px-[24px] py-[22px] hover:bg-[#3d6f44] transition-all"
           >
             Contact Us
