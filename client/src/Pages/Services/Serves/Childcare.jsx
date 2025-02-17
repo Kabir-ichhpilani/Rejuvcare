@@ -135,7 +135,7 @@ const Childcare = () => {
                 </div>
 
                 {/* Content Overlay */}
-                <div className="absolute z-10 max-w-4xl flex justify-center py-30  lg:px-20 ">
+                <div className="absolute z-10 max-w-4xl flex justify-center py-30 px-4  lg:px-20 ">
                     <div className="max-w-xl">
                         <h1 className="text-4xl md:text-5xl font-urbanist-bold leading-[52px] text-white mb-6">
                             Child Care <br/>Services
@@ -169,10 +169,10 @@ const Childcare = () => {
             </div>
             <div className="py-16 ">
                 <div className="max-w-8xl xl:pl-28">
-                    <img src={impimg2} className="absolute w-100  opacity-100 -left-[0%] h-100"/>
+                    <img src={impimg2} className="absolute w-100  opacity-40 -left-[0%] h-100"/>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         {/* Left Content */}
-                        <div className="max-w-[550px] md:pl-12">
+                        <div className="max-w-[550px] px-4 md:pl-12">
                             <h2 className="lg:text-5xl md:text-2xl font-urbanist-bold mb-8">
                                 Nurturing Young Minds With{' '}
                                 <span className="text-[#3D864B]">Care And Support</span>
@@ -207,7 +207,7 @@ const Childcare = () => {
             </div>
             <div className="flex justify-center w-screen bg-[#E9EFDE] items-center text-center relative">
                 {/* Positioned image similar to the screenshot */}
-                <img src={impimg4} className="absolute w-60 opacity-100 right-2 top-5/8 transform -translate-y-1/2 h-60" />
+                <img src={impimg4} className="absolute w-60 md:opacity-40 right-2 top-5/8 opacity-0 transform -translate-y-1/2 h-60" />
 
                 <div className="max-w-3xl py-16 px-4">
                     <p className="text-3xl font-urbanist-regular md:text-4xl leading-[49px]">
@@ -289,7 +289,7 @@ const Childcare = () => {
                                     openIndex === index ? 'max-h-48' : 'max-h-0'
                                 }`}
                             >
-                                <p className="py-4 text-gray-600  font-urbanist-regular text-2xl">{faq.answer}</p>
+                                <p className="md:py-1 py-0 text-gray-600   font-urbanist-regular text-xl md:text-2xl">{faq.answer}</p>
                             </div>
                         </div>
                     ))}

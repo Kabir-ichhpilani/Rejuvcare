@@ -37,7 +37,7 @@ const About = () => {
                         </div>
 
                         {/* Image Section */}
-                        <div className="relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
+                        <div className="   hidden lg:block relative w-full h-[300px] sm:h-[400px] md:h-[450px] lg:h-[600px] xl:h-[700px]">
                             {/* Background shape */}
                             <div className="absolute -top-6 lg:top-2 left-0 sm:left-6 md:left-12 lg:left-10 xl: w-full md:w-[300px] lg:w-[400px] xl:left-24 pr-10 xl:w-[550px] h-full">
                                 <img
