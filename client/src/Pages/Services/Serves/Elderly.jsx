@@ -22,7 +22,7 @@ import {  } from 'lucide-react';
 const ServiceCard = ({ icon, title, description }) => (
     <div className="bg-[#E9EFDE] p-6 w-full max-w-[400px] md:max-w-[350px] lg:max-w-[380px] xl:max-w-[420px] h-auto rounded-lg mx-auto">
         <img src={icon} className="w-10 h-10 text-[#3D864B] mb-4" />
-        <h3 className="text-[24px] lg:text-[28px] xl:text-[32px] font-urbanist-semibold mb-2">
+        <h3 className="text-[24px] lg:text-[28px] xl:text-[34px] max-w-[100px] font-urbanist-semibold mb-2">
             {title}
         </h3>
         <p className="text-gray-600 font-urbanist-medium text-[14px] lg:text-[18px] xl:text-[20px]">
@@ -145,8 +145,12 @@ const Elderly = () => {
                         Our compassionate elderly care services empower seniors to maintain independence while living with dignity and comfort. We assist with daily tasks, health monitoring, and provide companionship to enrich their lives.
                     </p>
 
-                    <button className="bg-emerald-600 hover:bg-emerald-700 text-white px-6 py-3 rounded-md transition-colors duration-200">
-                        Get in Touch
+
+                    <button
+
+                        className="inline-block cursor-pointer bg-[#3D864B] inset-shadow-sm shadow-[#ADCF5B] text-white px-6 md:px-8 py-3 rounded-lg hover:bg-[#3d8f5d] transition-colors"
+                    >
+                        Contact Us
                     </button>
                 </div>
             </div>
