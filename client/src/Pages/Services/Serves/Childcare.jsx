@@ -22,7 +22,7 @@ import {  } from 'lucide-react';
 const ServiceCard = ({ icon, title, description }) => (
     <div className="bg-[#E9EFDE] p-6 w-full max-w-[400px] md:max-w-[350px] lg:max-w-[380px] xl:max-w-[420px] h-auto rounded-lg mx-auto">
         <img src={icon} className="w-10 h-10 text-[#3D864B] mb-4" />
-        <h3 className="text-[24px] lg:text-[28px] xl:text-[34px] max-w-[100px]  font-urbanist-semibold mb-2">
+        <h3 className="text-[24px] lg:text-[28px] xl:text-[34px] max-w-[140px]  font-urbanist-semibold mb-2">
             {title}
         </h3>
         <p className="text-gray-600 font-urbanist-medium text-[14px] lg:text-[18px] xl:text-[20px]">
@@ -33,12 +33,12 @@ const ServiceCard = ({ icon, title, description }) => (
 
 const BenefitItem = ({  icon, title, description }) => (
     <div className="flex items-start space-x-4 mb-6">
-        <div className="bg-[#E9EFDE] p-4 rounded-2xl ">
-            <img src={icon} className="md:w-17 md:h-12 sm:w-14 sm:h-11  lg:w-20 lg:h-14 text-[#3D864B] " />
+        <div className="bg-[#E9EFDE] p-4 w-17 h-17 xl:w-25 xl:h-23 rounded-2xl ">
+            <img src={icon} className="lg:w-17 lg:h-12 sm:w-12 sm:h-9  xl:w-23 xl:h-16 text-[#3D864B] " />
         </div>
         <div>
-            <h3 className="font-semibold md:text-sm lg:text-2xl mb-1">{title}</h3>
-            <p className="text-gray-600 md:text-sm lg:text-2xl">{description}</p>
+            <h3 className="font-urbanist-semibold md:text-sm lg:text-xl xl:text-2xl mb-1">{title}</h3>
+            <p className="text-black font-urbanist-regular md:text-sm lg:text-xl xl:text-2xl">{description}</p>
         </div>
     </div>
 );
@@ -135,13 +135,13 @@ const Childcare = () => {
                 </div>
 
                 {/* Content Overlay */}
-                <div className="absolute z-10 max-w-4xl flex justify-center py-30 px-4  lg:px-20 ">
+                <div className="absolute z-10 max-w-4xl flex justify-center py-30 px-6 lg:px-12 xl:px-20 ">
                     <div className="max-w-xl">
                         <h1 className="text-4xl md:text-5xl font-urbanist-bold leading-[52px] text-white mb-6">
                             Child Care <br/>Services
                         </h1>
 
-                        <p className="text-lg text-white font-urbanist-regular leading-[33.33px] mb-8 max-w-[540px]">
+                        <p className="text-lg text-white font-urbanist-regular leading-[23.33px] mb-8 max-w-[540px]">
                             Rejuvcare provides nurturing and reliable child care tailored to support your child’s growth, learning, and well-being, offering parents peace of mind every step of the way.
                         </p>
 
@@ -176,8 +176,8 @@ const Childcare = () => {
                     <img src={impimg2} className="absolute w-100  opacity-40 -left-[0%] h-100"/>
                     <div className="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
                         {/* Left Content */}
-                        <div className="max-w-[550px] px-4 md:pl-12">
-                            <h2 className="lg:text-5xl md:text-2xl font-urbanist-bold mb-8">
+                        <div className="max-w-[550px] lg:pl-12 xl:pl-0 md:pl-14 px-4">
+                            <h2 className="xl:text-5xl lg:text-4xl md:text-2xl lg:leading-normal xl:leading-[70px] font-urbanist-bold mb-8">
                                 Nurturing Young Minds With{' '}
                                 <span className="text-[#3D864B]">Care And Support</span>
                             </h2>
@@ -199,7 +199,7 @@ const Childcare = () => {
                         <img
                             src={img2}
                             alt="Caregiver assisting senior"
-                            className="w-auto lg:h-[500px] md:h-[300px]  lg:px-6 object-cover rounded-2xl"
+                            className="relative w-auto xl:h-[650px] lg:h-[550px] md:h-[450px] md:pr-10  object-cover rounded-2xl"
                         />
                     </div>
 
@@ -239,18 +239,18 @@ const Childcare = () => {
                             <img
                                 src={img3}
                                 alt="Senior receiving compassionate care"
-                                className="relative w-auto h-[554px] z-50 object-cover rounded-2xl shadow-lg"
+                                className="relative w-auto md:h-[450px] lg:h-[600px] z-50 object-cover rounded-2xl shadow-lg"
                             />
                         </div>
 
                         {/* Right Content */}
                         <div className="space-y-2 max-w-[550px]">
-                            <h2 className="text-[35px] lg:text-[54px] leading-[62px] font-urbanist-bold">
+                            <h2 className="text-[35px] lg:text-[54px]  xl:pb-8 lg:leading-[62px] font-urbanist-bold">
                                Deliver Exceptional {' '}
                                 <span className="text-[#3D864B]"> Child Care</span>
                             </h2>
 
-                            <div className="space-y-4 max-w-[623px] text-[15px] lg:text-[21px]">
+                            <div className="space-y-4 max-w-[660px] xl:w-[620px] font-urbanist-regular text-[15px] lg:text-[21px]">
                                 <p className="text-gray-600">
                                     Balancing life and parenting can be overwhelming, especially when children require attentive care to grow and thrive.
                                 </p>
