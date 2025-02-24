@@ -81,18 +81,14 @@ const Footer = () => {
         </div>
 
       {/* Copyright - Responsive positioning */}
-      <div className="absolute lg:bottom-14 left-4 sm:left-auto sm:right-4 lg:right-16 text-xs sm:text-sm font-urbanist-semibold">
+      <div className="absolute lg:bottom-14 left-4 sm:left-auto sm:right-4 lg:right-16 text-xs sm:text-[18px] font-urbanist-semibold">
         © Copyright 2025 Rejuvcare. All rights reserved
       </div>
 
       {/* Background Decorative Elements */}
       <div className="absolute right-0 top-0 h-full w-1/2 pointer-events-none">
         <img src={cross || "/placeholder.svg"} alt="" className="absolute right-0 top-0 opacity-100 w-full max-w-md" />
-        <img
-          src={crossleft || "/placeholder.svg"}
-          alt=""
-          className="absolute right-10 sm:right-20 lg:right-40 bottom-0 opacity-10 w-full max-w-md"
-        />
+ 
       </div>
     </footer>
   )

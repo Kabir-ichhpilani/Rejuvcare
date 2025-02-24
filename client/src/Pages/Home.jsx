@@ -9,6 +9,8 @@ import carousel4 from "../assets/carousel4.png"
 import approachcare from "../assets/personalizedcare.png"
 import trustedsupport from "../assets/trustedsupport.png"
 import independence from "../assets/independence.png"
+import cross from '../assets/fullcross.png'
+import leftcross from '../assets/leftcross.png'
 import p1 from '../assets/p1.png'
 import p2 from '../assets/p2.png'
 import p3 from '../assets/p3.png'
@@ -66,6 +68,7 @@ import pci from "../assets/pci.png"
 import hipaacomplient from "../assets/hipaacomplient.png"
 import hitrust from "../assets/hitrust.png"
 
+
 export default function Home() {
   const navigate=useNavigate();
   const [hoveredItem, setHoveredItem] = useState("Elderly Care")
@@ -84,7 +87,7 @@ export default function Home() {
   
 
   return (
-    <div className="bg-[#ECF1E5] text-green-900">
+    <div className="bg-[#ECF1E5] text-green-900 z-[-1]">
       {/* Carousel */}
       <Carousel autoPlay infiniteLoop showThumbs={false} showStatus={false}>
         {[carousel1, carousel2, carousel3, carousel4].map((img, index) => (
@@ -95,32 +98,46 @@ export default function Home() {
       </Carousel>
 
       {/* Hero Section */}
-      <div className="text-center p-4 md:p-8">
-        <p className="mt-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-urbanist-regular leading-relaxed text-black">
-          Rejuvcare leads in <span className="bg-[#3D864B] text-white px-2 py-1 rounded">holistic wellness</span>,
-          <br className="hidden sm:block" />
-          helping you rejuvenate mind, body, and
-          <br className="hidden sm:block" />
-          spirit with personalized, <span className="bg-[#3D864B] text-white px-2 py-1 rounded">simplified care</span>.
-        </p>
-        <div className="flex  justify-center mt-4 space-x-2 sm:space-x-4 md:space-x-[49px] xl:h-[93px] ">
-          <img
-            src={hipaacomplient || "/placeholder.svg"}
-            alt="HIPAA Compliant"
-            className="h-[30px] sm:h-[50px] md:h-[73px] w-[60px] sm:w-[100px] md:w-[151px]"
-          />
-          <img
-            src={hitrust || "/placeholder.svg"}
-            alt="HITRUST Certified"
-            className="h-[15px] sm:h-[25px] md:h-[34px] w-[60px] sm:w-[100px] md:w-[151px] mt-2 sm:mt-4 md:mt-8"
-          />
-          <img
-            src={pci || "/placeholder.svg"}
-            alt="PCI Compliant"
-            className="h-[15px] sm:h-[25px] md:h-[36px] w-[60px] sm:w-[100px] md:w-[142px] mt-2 sm:mt-4 md:mt-10"
-          />
-        </div>
-      </div>
+     {/* Hero Section */}
+     <div className="relative overflow-hidden text-center p-4 md:p-8 z-100">
+  {/* Text Content */}
+  <p className="relative z-10 mt-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-urbanist-regular leading-relaxed text-black">
+    Rejuvcare leads in <span className="bg-[#3D864B] text-white px-2 py-1 rounded">holistic wellness</span>,
+    <br className="hidden sm:block" />
+    helping you rejuvenate mind, body, and
+    <br className="hidden sm:block" />
+    spirit with personalized, <span className="bg-[#3D864B] text-white px-2 py-1 rounded">simplified care</span>.
+  </p>
+
+  {/* Certification Icons */}
+  <div className="relative z-10 flex justify-center mt-4 space-x-2 sm:space-x-4 md:space-x-[49px] xl:h-[93px]">
+    <img
+      src={hipaacomplient || "/placeholder.svg"}
+      alt="HIPAA Compliant"
+      className="h-[30px] sm:h-[50px] md:h-[73px] w-[60px] sm:w-[100px] md:w-[151px]"
+    />
+    <img
+      src={hitrust || "/placeholder.svg"}
+      alt="HITRUST Certified"
+      className="h-[15px] sm:h-[25px] md:h-[34px] w-[60px] sm:w-[100px] md:w-[151px] mt-2 sm:mt-4 md:mt-8"
+    />
+    <img
+      src={pci || "/placeholder.svg"}
+      alt="PCI Compliant"
+      className="h-[15px] sm:h-[25px] md:h-[36px] w-[60px] sm:w-[100px] md:w-[142px] mt-2 sm:mt-4 md:mt-10"
+    />
+  </div>
+
+  {/* Cross Image - Responsive & Fixed for 2XL */}
+  <img
+    src={cross || "/placeholder.svg"}
+    alt="Decorative cross"
+    className="absolute bottom-[0rem] xl:bottom-[-4rem] 2xl:bottom-[-2rem] right-0 w-[60%] sm:w-[50%] md:w-[40%] lg:w-[35%]  xl:w-full max-w-lg opacity-90 z-[-1]"
+  />
+</div>
+
+
+
 
       {/* Elderly Care Section */}
       <div className="px-4 py-8 md:px-10 md:py-14 flex flex-col lg:flex-row items-start lg:items-center bg-[#F8F8FF]">
@@ -178,14 +195,14 @@ export default function Home() {
         </div>
       </div>
 
-      <div className="bg-[#ADCF5B33] px-4 py-8 sm:py-12 md:px-16 lg:px-32">
+      <div className="bg-[#ADCF5B33] px-4 py-8 sm:py-12 md:px-16 lg:px-20">
       {/* Heading */}
       <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-montserrat-semibold text-black text-center">
         Our Approach to Care
       </h2>
 
       {/* Tabs */}
-      <div className="flex flex-wrap justify-center text-center mt-6 font-montserrat-regular bg-white rounded-full p-2 sm:p-3 max-w-full sm:max-w-[90%] md:max-w-[90%] lg:max-w-[80vw] xl:max-w-[70%] mx-auto">
+      <div className="flex flex-wrap justify-center text-center mt-6 font-montserrat-regular bg-white rounded-full p-2 sm:p-5 max-w-full sm:max-w-[90%] md:max-w-[90%] lg:max-w-[80vw] xl:max-w-[70%] mx-auto">
         {tabs.map((tab) => (
           <button
             key={tab}
@@ -234,69 +251,71 @@ export default function Home() {
     </div>
 
       {/* Testimonials Section */}
-      <div className="p-6 md:p-12 text-center bg-white">
+      <div className="relative p-6 md:px-20 text-center bg-white">
+      <img 
+  src={leftcross} 
+  alt="background" 
+  className="absolute left-0  top-[120vh] sm:top-[100vh] md:top-[110vh] lg:top-[120vh] -translate-y-1/2 w-[100px] sm:w-[200px] md:w-[300px] lg:w-[350px] opacity-90" 
+/>
+
         <h3 className="font-semibold text-black text-2xl sm:text-3xl font-montserrat-semibold md:text-[40px]">Testimonials</h3>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-montserrat-semibold 2xl:text-[72px]   text-gray-900 mt-2">
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-montserrat-semibold 2xl:text-[72px] text-black mt-2">
           Heartfelt Words from Those
           <br className="hidden sm:block" /> We Care For
         </h2>
-        <p className="text-[#000000] text-base sm:text-lg font-montserrat-regular md:text-xl lg:text-2xl xl:text-[32px] mt-4 max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] mx-auto">
+        <p className="text-[#000000] text-base sm:text-lg font-montserrat-regular md:text-xl lg:text-2xl xl:text-[32px] mt-4 max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] mx-auto">
           Our clients share their experiences of trust, compassion, and the positive difference Rejuvcare has made in
-          their lives. Here's what<br/> they have to say.
+          their lives. Here's what they have to say.
         </p>
 
-        <div className="mt-8 flex flex-col lg:flex-row justify-center items-stretch gap-6 sm:gap-8 md:gap-10 ">
-      {[
-        {
-          quote: "A lifeline of support and kindness.",
-          content: [
-            "After my father's surgery, the Rejuvcare team was a source of comfort and strength for our family.",
-            "Their professionalism and genuine compassion made a challenging time so much easier. Thank you for going above and beyond.",
-          ],
-          author: "Sarah M.",
-        },
-        {
-          quote: "Care that feels like family.",
-          content: [
-            "Rejuvcare's team has been nothing short of amazing. Their dedication to helping my mother maintain her independence while ensuring her safety has been remarkable.",
-            "They truly treat us like family.",
-          ],
-          author: "James T.",
-        },
-        {
-          quote: "A service that restores peace of mind.",
-          content: [
-            "When we needed home care for our son with special needs, Rejuvcare stepped in and exceeded all expectations.",
-            "Their tailored approach and attention to detail made a world of difference in our lives.",
-          ],
-          author: "Priya R.",
-        },
-      ].map((testimonial, index) => (
-        <div
-          key={index}
-          className="border-[3px] border-[#ADCF5B33] p-6 sm:py-8 sm:px-4 rounded-[20px] bg-white shadow-sm w-full lg:w-[547px] lg:h-[679px] min-w-[300px] flex flex-col justify-between"
-        >
-          <div className="text-justify">
-            <p className="text-xl sm:text-2xl X md:text-3xl xl:text-[40px] font-montserrat-medium text-[#000000] leading-tight">
-              "{testimonial.quote}"
-            </p>
-            <div className="mt-4 space-y-3">
-              {testimonial.content.map((paragraph, idx) => (
-                <p
-                  key={idx}
-                  className="text-[#000000] font-montserrat-regular text-sm sm:text-base md:text-lg lg:text-[32px] leading-tight"
-                >
-                  {paragraph}
+        <div className="mt-12 flex flex-col lg:flex-row justify-center items-stretch gap-6 sm:gap-8 md:gap-10">
+          {[{
+            quote: "A lifeline of support and kindness.",
+            content: [
+              "After my father's surgery, the Rejuvcare team was a source of comfort and strength for our family.",
+              "Their professionalism and genuine compassion made a challenging time so much easier. Thank you for going above and beyond."
+            ],
+            author: "Sarah M.",
+          }, {
+            quote: "Care that feels like family.",
+            content: [
+              "Rejuvcare's team has been nothing short of amazing. Their dedication to helping my mother maintain her independence while ensuring her safety has been remarkable.",
+              "They truly treat us like family."
+            ],
+            author: "James T.",
+          }, {
+            quote: "A service that restores peace of mind.",
+            content: [
+              "When we needed home care for our son with special needs, Rejuvcare stepped in and exceeded all expectations.",
+              "Their tailored approach and attention to detail made a world of difference in our lives."
+            ],
+            author: "Priya R.",
+          }].map((testimonial, index) => (
+            <div
+              key={index}
+              className="border-[3px] border-[#ADCF5B33] p-6 sm:py-8 sm:px-6 rounded-[20px] bg-white shadow-sm w-full lg:w-[400px] xl:w-[450px] 2xl:w-[500px] min-w-[300px] flex flex-col justify-between text-left"
+            >
+              <div>
+                <p className="text-xl sm:text-2xl md:text-3xl xl:text-[32px] font-montserrat-medium text-[#000000] leading-tight">
+                  "{testimonial.quote}"
                 </p>
-              ))}
+                <div className="mt-4 space-y-3">
+                  {testimonial.content.map((paragraph, idx) => (
+                    <p
+                      key={idx}
+                      className="text-[#000000] font-montserrat-regular text-sm sm:text-base md:text-lg lg:text-[1.6rem] leading-relaxed"
+                    >
+                      {paragraph}
+                    </p>
+                  ))}
+                </div>
+              </div>
+              <p className="mt-6 font-semibold text-gray-900 text-lg sm:text-xl md:text-2xl xl:text-[28px]">
+                {testimonial.author}
+              </p>
             </div>
-          </div>
-          <p className="mt-6 font-semibold text-gray-900 text-lg sm:text-xl md:text-2xl 2xl:text-[32px]">
-            {testimonial.author}
-          </p>
+          ))}
         </div>
-      ))}
-    </div>
       </div>
     </div>
   )
