@@ -19,16 +19,16 @@ export default function Services() {
       {/* Hero Section */}
       <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-20 pt-8 sm:pt-12 lg:pt-16 pb-12 sm:pb-16 lg:pb-24">
         <div className="mt-16 sm:mt-20 lg:mt-28 xl:absolute">
-          <p className="text-base sm:text-lg">Our Services</p>
+          <p className="text-[24px] sm:text-lg font-urbanist-medium">Our Services </p>
         </div>
         <div className="grid lg:grid-cols-2 gap-8 items-center">
           <div className="space-y-2">
-            <h1 className="text-3xl sm:text-4xl md:text-5xl lg:text-[56px] font-bold leading-tight">
+            <h1 className="text-3xl sm:text-4xl md:text-5xl font-urbanist-extrabold lg:text-[66px]  leading-tight">
               Better <span className="text-[#3D864B]">Care</span>
               <br />
-              More <span className="text-[#3D864B]">Independence</span>
+              More <span className="text-[#3D864B]  font-urbanist-extrabold">Independence</span>
               <br />
-              Endless <span className="text-[#3D864B]">Possibilities</span>
+              Endless <span className="text-[#3D864B]  font-urbanist-extrabold">Possibilities</span>
             </h1>
           </div>
           <div className="relative">
@@ -59,20 +59,20 @@ export default function Services() {
               <img src={elderly || "/placeholder.svg"} alt="Elderly Care" className="w-full h-auto rounded-[32px]" />
             </div>
             <div className="space-y-4 sm:space-y-6 order-1 lg:order-2">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[45px] 2xl:text-[72px] font-bold leading-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[45px] 2xl:text-[52px]  font-urbanist-extrabold leading-tight">
                 Elderly Care With
                 <br />
                 <span className="text-[#3D864B]">Compassion</span> And <span className="text-[#3D864B]">Dignity</span>
               </h2>
-              <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-[28px]">
+              <p className="text-[#000000] text-base sm:text-lg md:text-xl lg:text-2xl font-urbanist-medium 2xl:text-[28px]">
                 Aging gracefully requires the right care and support. Rejuvcare offers specialized services tailored to
                 promote independence, safety, and comfort for elderly individuals.
               </p>
-              <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-[28px]">
+              <p className="text-[#000000] font-urbanist-medium text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-[28px]">
                 Our compassionate team provides assistance with daily activities, companionship, and health monitoring,
                 ensuring that your loved ones live their golden years with dignity and joy.
               </p>
-              <button onClick={()=>{navigate('/services/elderly')}} className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer">
+              <button onClick={()=>{navigate('/services/elderly')}} className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 font-urbanist-bold rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer">
                 Know More
               </button>
             </div>
@@ -95,20 +95,20 @@ export default function Services() {
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-14 items-end justify-between">
             {/* Content Section - Left */}
             <div className="space-y-4 sm:space-y-6 order-2 lg:order-1">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[45px] 2xl:text-[54px] font-bold leading-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[45px] 2xl:text-[54px] font-urbanist-extrabold leading-tight">
                 Trusted and Nurturing
                 <br />
                 <span className="text-[#3D864B]">Child Care</span>
               </h2>
-              <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-[28px]">
+              <p className="text-[#000000] text-base sm:text-lg md:text-xl font-urbanist-medium lg:text-2xl 2xl:text-[28px]">
                 Every child deserves care that is as unique as they are. Rejuvcare provides a safe, supportive, and
                 nurturing environment for your little ones.
               </p>
-              <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-[28px]">
+              <p className="text-[#000000] text-base sm:text-lg md:text-xl lg:text-2xl font-urbanist-medium 2xl:text-[28px]">
                 From assisting with daily routines to providing educational and emotional support, our team is here to
                 help children thrive while bringing you peace of mind.
               </p>
-              <button onClick={()=>{navigate('/services/childcare')}} className="bg-[#3D864B] cursor-pointer text-white px-6 sm:px-8 py-2 sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl">
+              <button onClick={()=>{navigate('/services/elderly')}} className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 font-urbanist-bold rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer">
                 Know More
               </button>
             </div>
@@ -142,20 +142,20 @@ export default function Services() {
               />
             </div>
             <div className="space-y-4 sm:space-y-6 order-1 lg:order-2">
-              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[45px] 2xl:text-[54px] font-bold leading-tight">
+              <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[45px] 2xl:text-[54px]  leading-tight font-urbanist-extrabold">
                 Reliable Domestic Help
           
-                <span className="text-[#3D864B]">  for a Stress-Free Home</span>
+                <span className="text-[#3D864B] font-urbanist-extrabold">  for a Stress-Free Home</span>
               </h2>
-              <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-[28px]">
+              <p className="text-[#000000] text-base sm:text-lg md:text-xl font-urbanist-medium lg:text-2xl 2xl:text-[28px]">
                 Maintaining a well-run home shouldn't be a burden. Rejuvcare's domestic help services take the stress
                 out of managing household tasks.
               </p>
-              <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-[28px]">
+              <p className="text-[#000000] text-base sm:text-lg md:text-xl font-urbanist-medium lg:text-2xl 2xl:text-[28px]">
                 Our trained staff assists with cleaning, meal preparation, and other essential chores, giving you more
                 time to focus on what truly matters.
               </p>
-              <button onClick={()=>{navigate('/services/domestic')}} className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 cursor-pointer sm:py-3 rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl">
+              <button onClick={()=>{navigate('/services/elderly')}} className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 font-urbanist-bold rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer">
                 Know More
               </button>
             </div>
@@ -167,7 +167,7 @@ export default function Services() {
       <div className="w-full py-12 sm:py-16 lg:py-20 relative overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-20">
           {/* Section Title */}
-          <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] 2xl:text-[72px] font-bold leading-tight mb-8 sm:mb-12 lg:mb-16">
+          <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] 2xl:text-[72px] font-urbanist-medium leading-tight mb-8 sm:mb-12 lg:mb-16">
             Why Our <span className="text-[#3D864B]">Care</span> is Made Just
             <br className="hidden sm:block" />
             for <span className="text-[#3D864B]">You</span>
@@ -184,11 +184,11 @@ export default function Services() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[48px] font-semibold">
+              <h3 className="text-xl sm:text-2xl font-urbanist-semibold md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[48px] ">
                 Care Tailored Just for
                 <br className="hidden sm:block" /> You
               </h3>
-              <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-[36px]">
+              <p className="text-[#101011] font-urbanist-regular text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-[36px]">
                 We understand that every individual and family is unique. That's why our services are personalized to
                 meet your specific needs and priorities, ensuring a perfect fit every time.
               </p>
@@ -199,11 +199,11 @@ export default function Services() {
               <div className="w-12 h-12 sm:w-16 sm:h-16">
                 <img src={compassion || "/placeholder.svg"} alt="Compassion" className="w-full h-full object-contain" />
               </div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[48px] font-semibold">
+              <h3 className="text-xl font-urbanist-semibold sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[48px] ">
                 Compassion at the
                 <br className="hidden sm:block" /> Core
               </h3>
-              <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-[36px]">
+              <p className="text-[#101011] font-urbanist-regular text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-[36px]">
                 We understand that every individual and family is unique. That's why our services are personalized to
                 meet your specific needs and priorities, ensuring a perfect fit every time.
               </p>
@@ -218,11 +218,11 @@ export default function Services() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[48px] font-semibold">
+              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[48px] font-urbanist-semibold">
                 A Holistic Approach to
                 <br className="hidden sm:block" /> Well-Being
               </h3>
-              <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-[36px]">
+              <p className="text-[#101011] font-urbanist-regular text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-[36px]">
                 We understand that every individual and family is unique. That's why our services are personalized to
                 meet your specific needs and priorities, ensuring a perfect fit every time.
               </p>
@@ -237,11 +237,11 @@ export default function Services() {
                   className="w-full h-full object-contain"
                 />
               </div>
-              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[48px] font-semibold">
+              <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[48px] font-urbanist-semibold">
                 Reliability You Can
                 <br className="hidden sm:block" /> Count On
               </h3>
-              <p className="text-gray-600 text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] 2xl:text-[36px]">
+              <p className="text-[#101011] text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] font-urbanist-regular 2xl:text-[36px]">
                 We understand that every individual and family is unique. That's why our services are personalized to
                 meet your specific needs and priorities, ensuring a perfect fit every time.
               </p>

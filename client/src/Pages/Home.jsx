@@ -103,21 +103,21 @@ export default function Home() {
           <br className="hidden sm:block" />
           spirit with personalized, <span className="bg-[#3D864B] text-white px-2 py-1 rounded">simplified care</span>.
         </p>
-        <div className="flex justify-center mt-4 space-x-2 sm:space-x-4 md:space-x-[49px]">
+        <div className="flex  justify-center mt-4 space-x-2 sm:space-x-4 md:space-x-[49px] xl:h-[93px] ">
           <img
             src={hipaacomplient || "/placeholder.svg"}
             alt="HIPAA Compliant"
-            className="h-[30px] sm:h-[50px] md:h-[93px] w-[60px] sm:w-[100px] md:w-[171px]"
+            className="h-[30px] sm:h-[50px] md:h-[73px] w-[60px] sm:w-[100px] md:w-[151px]"
           />
           <img
             src={hitrust || "/placeholder.svg"}
             alt="HITRUST Certified"
-            className="h-[15px] sm:h-[25px] md:h-[44px] w-[60px] sm:w-[100px] md:w-[171px] mt-2 sm:mt-4 md:mt-8"
+            className="h-[15px] sm:h-[25px] md:h-[34px] w-[60px] sm:w-[100px] md:w-[151px] mt-2 sm:mt-4 md:mt-8"
           />
           <img
             src={pci || "/placeholder.svg"}
             alt="PCI Compliant"
-            className="h-[15px] sm:h-[25px] md:h-[46px] w-[60px] sm:w-[100px] md:w-[172px] mt-2 sm:mt-4 md:mt-10"
+            className="h-[15px] sm:h-[25px] md:h-[36px] w-[60px] sm:w-[100px] md:w-[142px] mt-2 sm:mt-4 md:mt-10"
           />
         </div>
       </div>
@@ -154,7 +154,7 @@ export default function Home() {
               </span>
             </div>
           ))}
-          <button onClick={()=>{navigate('/services')}} className="mt-4 bg-green-700 text-white px-4 sm:px-6 py-2 sm:py-3 md:px-8 md:py-4 font-montserrat-semibold rounded-md ml-4 sm:ml-[5vw] lg:ml-[4vw] xl:ml-[3vw] shadow-md text-sm sm:text-base">
+          <button onClick={()=>{navigate('/services')}} className="mt-4 bg-green-700 border-[1.5px] border-[#ADCF5B] text-white px-4 sm:px-6 py-2 sm:py-3 md:px-8 md:py-4 font-montserrat-semibold rounded-md ml-4 sm:ml-[5vw] lg:ml-[4vw] xl:ml-[3vw] shadow-md text-sm sm:text-base">
             View All Specialities
           </button>
         </div>
@@ -203,13 +203,13 @@ export default function Home() {
       <div className="mt-8 sm:mt-10 flex flex-col lg:flex-row items-center">
         {/* Left Content */}
         <div className="lg:w-1/2 text-left">
-          <h3 className="text-xl sm:text-[48px] font-semibold cursor-pointer">{tabsData[selectedTab].title}</h3>
-          <p className="mt-4 text-[#000000] text-sm sm:text-[28px]">{tabsData[selectedTab].description}</p>
+          <h3 className="text-xl sm:text-[48px] font-montserrat-medium cursor-pointer text-[#101011]">{tabsData[selectedTab].title}</h3>
+          <p className="mt-4 text-[#000000]  text-sm sm:text-[28px]">{tabsData[selectedTab].description}</p>
 
           {/* Features List */}
-          <ul className="mt-6 space-y-3 text-base sm:text-lg font-semibold">
+          <ul className="mt-14 leading-[2] text-base  sm:text-lg font-semibold">
             {tabsData[selectedTab].features.map((feature, index) => (
-              <li key={index} className="flex items-center gap-2">
+              <li key={index} className="flex items-center underline  gap-2 text-[#000000] font-montserrat-semibold ">
                 <img src={feature.icon || "/placeholder.svg"} alt="" className="w-6 h-6" />
                 <span className="hover:underline cursor-pointer text-[28px]">{feature.text}</span>
               </li>
@@ -217,7 +217,7 @@ export default function Home() {
           </ul>
 
           {/* About Link */}
-          <div  onClick={()=>{navigate('/about')}} className="mt-6 flex items-center text-black font-medium text-[26px] cursor-pointer hover:underline">
+          <div  onClick={()=>{navigate('/about')}} className="mt-6 flex items-center text-[#101011] font-medium text-[26px] cursor-pointer font-urbanist-semibold hover:underline">
             About Rejuvcare →
           </div>
         </div>
@@ -235,14 +235,14 @@ export default function Home() {
 
       {/* Testimonials Section */}
       <div className="p-6 md:p-12 text-center bg-white">
-        <h3 className="font-semibold text-black text-2xl sm:text-3xl md:text-[40px]">Testimonials</h3>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-[72px] font-bold text-gray-900 mt-2">
+        <h3 className="font-semibold text-black text-2xl sm:text-3xl font-montserrat-semibold md:text-[40px]">Testimonials</h3>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-montserrat-semibold 2xl:text-[72px]   text-gray-900 mt-2">
           Heartfelt Words from Those
           <br className="hidden sm:block" /> We Care For
         </h2>
-        <p className="text-[#000000] text-base sm:text-lg md:text-xl lg:text-2xl 2xl:text-[32px] mt-4 max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] mx-auto">
+        <p className="text-[#000000] text-base sm:text-lg font-montserrat-regular md:text-xl lg:text-2xl xl:text-[32px] mt-4 max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[80%] mx-auto">
           Our clients share their experiences of trust, compassion, and the positive difference Rejuvcare has made in
-          their lives. Here's what they have to say.
+          their lives. Here's what<br/> they have to say.
         </p>
 
         <div className="mt-8 flex flex-col lg:flex-row justify-center items-stretch gap-6 sm:gap-8 md:gap-10 ">
@@ -274,17 +274,17 @@ export default function Home() {
       ].map((testimonial, index) => (
         <div
           key={index}
-          className="border-[3px] border-[#ADCF5B33] p-6 sm:p-8 rounded-[20px] bg-white shadow-sm w-full lg:w-[30%] min-w-[300px] flex flex-col justify-between"
+          className="border-[3px] border-[#ADCF5B33] p-6 sm:py-8 sm:px-4 rounded-[20px] bg-white shadow-sm w-full lg:w-[547px] lg:h-[679px] min-w-[300px] flex flex-col justify-between"
         >
-          <div>
-            <p className="text-xl sm:text-2xl md:text-3xl 2xl:text-[36px] font-medium text-[#000000] leading-tight">
+          <div className="text-justify">
+            <p className="text-xl sm:text-2xl X md:text-3xl xl:text-[40px] font-montserrat-medium text-[#000000] leading-tight">
               "{testimonial.quote}"
             </p>
             <div className="mt-4 space-y-3">
               {testimonial.content.map((paragraph, idx) => (
                 <p
                   key={idx}
-                  className="text-[#000000] text-sm sm:text-base md:text-lg lg:text-xl 2xl:text-[30px] leading-tight"
+                  className="text-[#000000] font-montserrat-regular text-sm sm:text-base md:text-lg lg:text-[32px] leading-tight"
                 >
                   {paragraph}
                 </p>

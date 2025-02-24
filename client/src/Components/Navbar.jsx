@@ -47,8 +47,7 @@ export default function Navbar() {
         <button onClick={() => setMenuOpen(!menuOpen)} className="md:hidden text-[#101010] text-3xl">
           {menuOpen ? <FiX /> : <FiMenu />}
         </button>
-      </div>
-
+      </div>  
       {/* Mobile Menu */}
       {menuOpen && (
         <div className="md:hidden flex flex-col items-center gap-6 bg-white py-6 shadow-md">
@@ -58,7 +57,7 @@ export default function Navbar() {
     to={item.path}
     onClick={()=>{setMenuOpen(false)}}
     className="font-urbanist text-[#101010] text-lg  font-urbanist-medium transition-colors cursor-pointer"
-  >
+  > 
     {item.name}
   </Link>
 ))}
