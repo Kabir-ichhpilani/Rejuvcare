@@ -149,7 +149,7 @@ export default function Home() {
           {serviceOptions.map((item) => (
             <div
               key={item}
-              className="group flex items-center gap-2 mb-4 md:mb-[-5vw] xl:mb-6"
+              className="group flex items-center gap-2 mb-4 md:mb-[-5vw] xl:mb-3"
               onMouseEnter={() => setHoveredItem(item)}
               onMouseLeave={() => setHoveredItem("Elderly Care")}
             >
@@ -251,7 +251,7 @@ export default function Home() {
     </div>
 
       {/* Testimonials Section */}
-      <div className="relative p-6 md:px-20 text-center bg-white">
+      <div className="relative p-6 md:px-20 text-center bg-[#f8f8f8]">
       <img 
   src={leftcross} 
   alt="background" 

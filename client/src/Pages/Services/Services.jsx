@@ -15,9 +15,9 @@ export default function Services() {
     const navigate=useNavigate();
 
   return (
-    <div className="font-['Urbanist'] w-full overflow-hidden">
+    <div className="font-['Urbanist'] w-full bg-[#f8f8f8] overflow-hidden">
       {/* Hero Section */}
-      <div className="w-full max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-20 pt-8 sm:pt-12 lg:pt-16 pb-12 sm:pb-16 lg:pb-24">
+      <div className="w-full max-w-[1440px]  mx-auto px-4 sm:px-6 lg:px-20 pt-8 sm:pt-12 lg:pt-16 pb-12 sm:pb-16 lg:pb-24">
         <div className="mt-16 sm:mt-20 lg:mt-28 xl:absolute">
           <p className="text-[24px] sm:text-lg font-urbanist-medium">Our Services </p>
         </div>
@@ -94,7 +94,7 @@ export default function Services() {
         <div className="max-w-[1440px] mx-auto px-4 sm:px-6 lg:px-20 relative z-10">
           <div className="grid lg:grid-cols-2 gap-8 lg:gap-14 items-end justify-between">
             {/* Content Section - Left */}
-            <div className="space-y-4 sm:space-y-6 order-2 lg:order-1">
+            <div className="space-y-4 sm:space-y-6 order-2 lg:order-1 bg-[#f8f8f8]">
               <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[45px] 2xl:text-[54px] font-urbanist-extrabold leading-tight">
                 Trusted and Nurturing
                 <br />
@@ -164,7 +164,7 @@ export default function Services() {
       </div>
 
       {/* Why Our Care is Made Just for You Section */}
-      <div className="w-full py-12 sm:py-16 lg:py-20 relative overflow-hidden">
+      <div className="w-full py-12 sm:py-16 lg:py-20 relative bg-[#f8f8f8] overflow-hidden">
         <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-20">
           {/* Section Title */}
           <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] 2xl:text-[72px] font-urbanist-medium leading-tight mb-8 sm:mb-12 lg:mb-16">
