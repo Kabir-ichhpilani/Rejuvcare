@@ -16,7 +16,7 @@ import pci from "../assets/pci.png";
 const Footer = () => {
   return (
     <footer className="bg-[#E9EFDE] text-green-800   min-h-[80vh] relative overflow-hidden px-4 sm:px-6 md:px-8 lg:px-16 xl:px-0 py-8">
-      <div className="relative z-10 flex flex-col lg:flex-row justify-start lg:space-x-22 items-start max-w-[1220px] lg:mt-10 mx-24 "> 
+      <div className="relative z-10 flex flex-col lg:flex-row justify-start lg:space-x-22 items-start max-w-[1220px] lg:mt-10  mx-auto xl:mx-24 "> 
         <div className="flex flex-col gap-6 sm:gap-8 w-full lg:w-auto mb-8 lg:mb-0">
           {/* Logo */}
           <div className="max-w-[200px] sm:max-w-[250px] lg:max-w-[300px]">
