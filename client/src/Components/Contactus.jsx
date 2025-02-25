@@ -42,7 +42,7 @@ export default function Contactus() {
       Thank you for connecting <br /> with Rejuvcare! A care <br /> expert will reach out to <br /> you soon.
     </p>
   </div>
-  <div className="mt-6 xl:mt-0 xl:absolute xl:right-[-10px] sm:right-[-50px] bottom-0">
+  <div className="mt-6 xl:mt-0 xl:absolute sm:right-[-50px] bottom-0">
     <img
       src={thankyougirl || "/placeholder.svg"}
       alt="Healthcare professional"
