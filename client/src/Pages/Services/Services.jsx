@@ -18,7 +18,7 @@ export default function Services() {
     <div className="font-['Urbanist'] w-full bg-[#f8f8f8] overflow-hidden">
       {/* Hero Section */}
       <div className="w-full max-w-[1440px]  mx-auto px-4 sm:px-6 lg:px-20 pt-8 sm:pt-12 lg:pt-16 pb-12 sm:pb-16 lg:pb-24">
-        <div className="mt-16 sm:mt-20 lg:mt-28 xl:absolute">
+        <div className="mt-16 sm:mt-20 lg:mt-40 xl:absolute">
           <p className="text-[24px] sm:text-lg font-urbanist-medium">Our Services </p>
         </div>
         <div className="grid lg:grid-cols-2 gap-8 items-center">
@@ -190,11 +190,11 @@ export default function Services() {
             className="w-full h-full object-contain"
           />
         </div>
-        <h3 className="text-xl sm:text-2xl font-urbanist-semibold md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[48px]">
+        <h3 className="text-xl sm:text-2xl font-urbanist-semibold md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[40px]">
           Care Tailored Just for
           <br className="hidden sm:block" /> You
         </h3>
-        <p className="text-[#101011] font-urbanist-regular text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px]">
+        <p className="text-[#101011] font-urbanist-regular max-w-[90%]  text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px]">
           We understand that every individual and family is unique. That's why our services are personalized to meet
           your specific needs and priorities, ensuring a perfect fit every time.
         </p>
@@ -205,11 +205,11 @@ export default function Services() {
         <div className="w-12 h-12 sm:w-16 sm:h-16">
           <img src={compassion || "/placeholder.svg"} alt="Compassion" className="w-full h-full object-contain" />
         </div>
-        <h3 className="text-xl font-urbanist-semibold sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[48px]">
+        <h3 className="text-xl font-urbanist-semibold sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[40px]">
           Compassion at the
           <br className="hidden sm:block" /> Core
         </h3>
-        <p className="text-[#101011] font-urbanist-regular text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px]">
+        <p className="text-[#101011] font-urbanist-regular max-w-[90%] text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px]">
           We understand that every individual and family is unique. That's why our services are personalized to meet
           your specific needs and priorities, ensuring a perfect fit every time.
         </p>
@@ -224,11 +224,11 @@ export default function Services() {
             className="w-full h-full object-contain"
           />
         </div>
-        <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[48px] font-urbanist-semibold">
+        <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[40px] font-urbanist-semibold">
           A Holistic Approach to
           <br className="hidden sm:block" /> Well-Being
         </h3>
-        <p className="text-[#101011] font-urbanist-regular text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px]">
+        <p className="text-[#101011] font-urbanist-regular text-base sm:text-lg max-w-[90%] md:text-xl lg:text-2xl xl:text-[28px]">
           We understand that every individual and family is unique. That's why our services are personalized to meet
           your specific needs and priorities, ensuring a perfect fit every time.
         </p>
@@ -243,11 +243,11 @@ export default function Services() {
             className="w-full h-full object-contain"
           />
         </div>
-        <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[48px] font-urbanist-semibold">
+        <h3 className="text-xl sm:text-2xl md:text-3xl lg:text-4xl xl:text-[40px] 2xl:text-[40px] font-urbanist-semibold">
           Reliability You Can
           <br className="hidden sm:block" /> Count On
         </h3>
-        <p className="text-[#101011] text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] font-urbanist-regular">
+        <p className="text-[#101011] text-base sm:text-lg md:text-xl lg:text-2xl xl:text-[28px] max-w-[90%] font-urbanist-regular">
           We understand that every individual and family is unique. That's why our services are personalized to meet
           your specific needs and priorities, ensuring a perfect fit every time.
         </p>

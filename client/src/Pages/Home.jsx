@@ -24,42 +24,42 @@ import o2 from '../assets/o2.png'
 import o3 from '../assets/o3.png'
 import o4 from '../assets/o4.png'
 const tabsData = {
-    "Personalized Care": {
-      title: "Personalized Care",
-      description:
-        "We craft tailored care that respects your unique needs, preferences, and lifestyle for a truly personalized experience.",
-      image: approachcare,
-      features: [
-        { icon: p1, text: "Respecting Preferences" },
-        { icon: p2, text: "Holistic Support" },
-        { icon: p3, text: "Individualized Approach" },
-        { icon: p4, text: "Focused Well-Being" },
-      ],
-    },
-    "Trusted Support": {
-      title: "Trusted Support",
-      description:
-        "Your safety and comfort are our priorities. Our compassionate caregivers are handpicked to feel like family.",
-      image: trustedsupport,
-      features: [
-        { icon: t1, text: "Experienced Caregivers" },
-        { icon: t2, text: "Compassionate Approach" },
-        { icon: t3, text: "Family-Like Care" },
-        { icon: t4, text: "Reliable Assistance" },
-      ],
-    },
-    "Independence First": {
-      title: "Independence First",
-      description: "We empower you to maintain your independence and dignity, living life on your own terms.",
-      image: independence,
-      features: [
-        { icon: o1, text: "Empowering Lives" },
-        { icon: o2, text: "Dignified Assistance" },
-        { icon: o3, text: "Encouraging Freedom" },
-        { icon: o4, text: "Respectful Support" },
-      ],
-    },
-  }
+  "Personalized Care": {
+    title: "Personalized Care",
+    description:
+      "We craft tailored care that respects your unique needs, preferences, and lifestyle for a truly personalized experience.",
+    image: approachcare,
+    features: [
+      { icon: p1, text: "Respecting Preferences" },
+      { icon: p2, text: "Holistic Support" },
+      { icon: p3, text: "Individualized Approach" },
+      { icon: p4, text: "Focused Well-Being" },
+    ],
+  },
+  "Trusted Support": {
+    title: "Trusted Support",
+    description:
+      "Your safety and comfort are our priorities. Our compassionate caregivers are handpicked to feel like family.",
+    image: trustedsupport,
+    features: [
+      { icon: t1, text: "Experienced Caregivers" },
+      { icon: t2, text: "Compassionate Approach" },
+      { icon: t3, text: "Family-Like Care" },
+      { icon: t4, text: "Reliable Assistance" },
+    ],
+  },
+  "Independence First": {
+    title: "Independence First",
+    description: "We empower you to maintain your independence and dignity, living life on your own terms.",
+    image: independence,
+    features: [
+      { icon: o1, text: "Empowering Lives" },
+      { icon: o2, text: "Dignified Assistance" },
+      { icon: o3, text: "Encouraging Freedom" },
+      { icon: o4, text: "Respectful Support" },
+    ],
+  },
+}
 
 import elderlycare from "../assets/elderlycare.png"
 import childcare from "../assets/childcare.jpg"
@@ -70,7 +70,7 @@ import hitrust from "../assets/hitrust.png"
 
 
 export default function Home() {
-  const navigate=useNavigate();
+  const navigate = useNavigate();
   const [hoveredItem, setHoveredItem] = useState("Elderly Care")
   const tabs = Object.keys(tabsData)
   const [selectedTab, setSelectedTab] = useState("Personalized Care")
@@ -80,11 +80,11 @@ export default function Home() {
 
   const serviceOptions = ["Elderly Care", "Child Care", "Domestic Help Care"]
   const serviceContent = {
-    "Elderly Care":"Our Elderly Care services focus on providing dignity, comfort, and support, ensuring physical well-being, emotional balance, and companionship in the golden years. From daily assistance to health monitoring, we’re here to make life easier.",
-    "Child Care":"Our Child Care services are tailored to nurture young minds and bodies. Whether it’s educational support, daycare, or emotional development, we ensure your children are safe, happy, and thriving in our care.",
-    "Domestic Help Care":"Our Domestic Help Care services ensure that your home remains well-maintained, clean, and organized. From housekeeping to essential chores, we provide trusted and professional assistance to make daily living stress-free.",
+    "Elderly Care": "Our Elderly Care services focus on providing dignity, comfort, and support, ensuring physical well-being, emotional balance, and companionship in the golden years. From daily assistance to health monitoring, we’re here to make life easier.",
+    "Child Care": "Our Child Care services are tailored to nurture young minds  and bodies. Whether it’s educational support, daycare, or emotional development, we ensure your children are safe, happy, and thriving in our care.",
+    "Domestic Help Care": "Our Domestic Help Care services ensure that your home remains well-maintained, clean, and organized. From housekeeping to essential chores, we provide trusted and professional assistance to make daily living stress-free.",
   };
-  
+
 
   return (
     <div className="bg-[#ECF1E5] text-green-900 z-[-1]">
@@ -98,51 +98,47 @@ export default function Home() {
       </Carousel>
 
       {/* Hero Section */}
-     {/* Hero Section */}
-     <div className="relative overflow-hidden text-center p-4 md:p-8 z-100">
-  {/* Text Content */}
-  <p className="relative z-10 mt-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-urbanist-regular leading-relaxed text-black">
-    Rejuvcare leads in <span className="bg-[#3D864B] text-white px-2 py-1 rounded">holistic wellness</span>,
-    <br className="hidden sm:block" />
-    helping you rejuvenate mind, body, and
-    <br className="hidden sm:block" />
-    spirit with personalized, <span className="bg-[#3D864B] text-white px-2 py-1 rounded">simplified care</span>.
-  </p>
+      {/* Hero Section */}
+      <div className="relative overflow-hidden text-center p-4 md:p-8 z-100">
+        {/* Text Content */}
+        <p className="relative z-10 mt-4 text-xl sm:text-2xl md:text-3xl lg:text-4xl 2xl:text-5xl font-urbanist-regular leading-relaxed text-black">
+          Rejuvcare leads in <span className="bg-[#3D864B] text-white px-2 py-1 rounded">holistic wellness</span>,
+          <br className="hidden sm:block" />
+          helping you rejuvenate mind, body, and
+          <br className="hidden sm:block" />
+          spirit with personalized, <span className="bg-[#3D864B] text-white px-2 py-1 rounded">simplified care</span>.
+        </p>
 
-  {/* Certification Icons */}
-  <div className="relative z-10 flex justify-center mt-4 space-x-2 sm:space-x-4 md:space-x-[49px] xl:h-[93px]">
-    <img
-      src={hipaacomplient || "/placeholder.svg"}
-      alt="HIPAA Compliant"
-      className="h-[30px] sm:h-[50px] md:h-[73px] w-[60px] sm:w-[100px] md:w-[151px]"
-    />
-    <img
-      src={hitrust || "/placeholder.svg"}
-      alt="HITRUST Certified"
-      className="h-[15px] sm:h-[25px] md:h-[34px] w-[60px] sm:w-[100px] md:w-[151px] mt-2 sm:mt-4 md:mt-8"
-    />
-    <img
-      src={pci || "/placeholder.svg"}
-      alt="PCI Compliant"
-      className="h-[15px] sm:h-[25px] md:h-[36px] w-[60px] sm:w-[100px] md:w-[142px] mt-2 sm:mt-4 md:mt-10"
-    />
-  </div>
+        {/* Certification Icons */}
+        <div className="relative z-10 flex justify-center mt-4 space-x-2 sm:space-x-4 md:space-x-[49px] xl:h-[93px]">
+          <img
+            src={hipaacomplient || "/placeholder.svg"}
+            alt="HIPAA Compliant"
+            className="h-[30px] sm:h-[50px] md:h-[73px] w-[60px] sm:w-[100px] md:w-[151px]"
+          />
+          <img
+            src={hitrust || "/placeholder.svg"}
+            alt="HITRUST Certified"
+            className="h-[15px] sm:h-[25px] md:h-[34px] w-[60px] sm:w-[100px] md:w-[151px] mt-2 sm:mt-4 md:mt-8"
+          />
+          <img
+            src={pci || "/placeholder.svg"}
+            alt="PCI Compliant"
+            className="h-[15px] sm:h-[25px] md:h-[36px] w-[60px] sm:w-[100px] md:w-[142px] mt-2 sm:mt-4 md:mt-10"
+          />
+        </div>
 
-  {/* Cross Image - Responsive & Fixed for 2XL */}
-  <img
-    src={cross || "/placeholder.svg"}
-    alt="Decorative cross"
-    className="absolute bottom-[0rem] xl:bottom-[-4rem] 2xl:bottom-[-2rem] right-0 w-[60%] sm:w-[50%] md:w-[40%] lg:w-[35%]  xl:w-full max-w-lg opacity-90 z-[-1]"
-  />
-</div>
-
-
-
-
+        {/* Cross Image - Responsive & Fixed for 2XL */}
+        <img
+          src={cross || "/placeholder.svg"}
+          alt="Decorative cross"
+          className="absolute bottom-[0rem] xl:bottom-[-4rem] 2xl:bottom-[-2rem] right-0 w-[60%] sm:w-[50%] md:w-[40%] lg:w-[35%]  xl:w-full max-w-lg opacity-90 z-[-1]"
+        />
+      </div>
       {/* Elderly Care Section */}
       <div className="px-4 py-8 md:px-10 md:py-14 flex flex-col lg:flex-row items-start lg:items-center bg-[#F8F8FF]">
         <div className="lg:w-1/2">
-          <h3 className="text-black uppercase text-lg sm:text-xl font-montserrat-regular tracking-wide mb-4 md:mb-0 ml-4 sm:ml-[5vw] xl:ml-[4vw]">
+          <h3 className="text-black uppercase text-lg sm:text-xl font-montserrat-regular tracking-wide mb-4 md:mb-0 ml-9 sm:ml-[4vw] xl:ml-[2.5vw]">
             WHAT WE OFFER
           </h3>
 
@@ -171,7 +167,7 @@ export default function Home() {
               </span>
             </div>
           ))}
-          <button onClick={()=>{navigate('/services')}} className="mt-4 bg-green-700 border-[1.5px] border-[#ADCF5B] text-white px-4 sm:px-6 py-2 sm:py-3 md:px-8 md:py-4 font-montserrat-semibold rounded-md ml-4 sm:ml-[5vw] lg:ml-[4vw] xl:ml-[3vw] shadow-md text-sm sm:text-base">
+          <button onClick={() => { navigate('/services') }} className="mt-4 bg-green-700 border-[1.5px] border-[#ADCF5B] text-white px-4 sm:px-6 py-2 sm:py-3 md:px-8 md:py-4 font-montserrat-semibold rounded-md ml-4 sm:ml-[5vw] lg:ml-[4vw] xl:ml-[3vw] shadow-md text-sm sm:text-base">
             View All Specialities
           </button>
         </div>
@@ -183,87 +179,86 @@ export default function Home() {
           />
           <p className="text-lg sm:text-xl lg:text-[20px] xl:text-[24px] font-montserrat-semibold text-black">
             Compassionate care for aging loved ones.
-          </p>  
+          </p>
           {hoveredItem && (
-         
-          <span className="text-sm sm:text-base xl:text-[22px] lg:text-[18px] font-montserrat-regular text-[#101010]">
-            {serviceContent[hoveredItem]}
-          </span>
-        )}
-        
-       
+
+            <span className="text-sm sm:text-base xl:text-[22px] lg:text-[18px] xl:max-w-[85%] 2xl:max-w-[90%] font-montserrat-regular text-justify text-[#101010]">
+              {serviceContent[hoveredItem]}
+            </span>
+          )}
+
+
         </div>
       </div>
 
       <div className="bg-[#ADCF5B33] px-4 py-8 sm:py-12 md:px-16 lg:px-20">
-      {/* Heading */}
-      <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-montserrat-semibold text-black text-center">
-        Our Approach to Care
-      </h2>
+        {/* Heading */}
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl 2xl:text-6xl font-montserrat-semibold text-black text-center">
+          Our Approach to Care
+        </h2>
 
-      {/* Tabs */}
-      <div className="flex flex-wrap justify-center text-center mt-6 font-montserrat-regular bg-white rounded-full p-2 sm:p-5 max-w-full sm:max-w-[90%] md:max-w-[90%] lg:max-w-[80vw] xl:max-w-[70%] mx-auto">
-        {tabs.map((tab) => (
-          <button
-            key={tab}
-            onClick={() => setSelectedTab(tab)}
-            className={`px-3 sm:px-4 md:px-6 py-2 text-sm sm:text-base md:text-lg cursor-pointer lg:text-xl 2xl:text-2xl rounded-full  transition duration-300 mb-2 sm:mb-0 ${
-              selectedTab === tab ? "bg-green-700 text-white" : "text-black"
-            }`}
-          >
-            {tab}
-          </button>
-        ))}
-      </div>
+        {/* Tabs */}
+        <div className="flex flex-wrap justify-center text-center mt-6 font-montserrat-regular bg-white rounded-full p-2 sm:p-5 max-w-full sm:max-w-[90%] md:max-w-[90%] lg:max-w-[80vw] xl:max-w-[70%] mx-auto">
+          {tabs.map((tab) => (
+            <button
+              key={tab}
+              onClick={() => setSelectedTab(tab)}
+              className={`px-3 sm:px-4 md:px-6 py-2 text-sm sm:text-base md:text-lg cursor-pointer lg:text-xl 2xl:text-2xl rounded-full  transition duration-300 mb-2 sm:mb-0 ${selectedTab === tab ? "bg-green-700 text-white" : "text-black"
+                }`}
+            >
+              {tab}
+            </button>
+          ))}
+        </div>
 
-      {/* Content Section */}
-      <div className="mt-8 sm:mt-10 flex flex-col lg:flex-row items-center">
-        {/* Left Content */}
-        <div className="lg:w-1/2 text-left">
-          <h3 className="text-xl sm:text-[48px] font-montserrat-medium cursor-pointer text-[#101011]">{tabsData[selectedTab].title}</h3>
-          <p className="mt-4 text-[#000000]  text-sm sm:text-[28px]">{tabsData[selectedTab].description}</p>
+        {/* Content Section */}
+        <div className="mt-8 sm:mt-10 flex flex-col lg:flex-row items-center">
+          {/* Left Content */}
+          <div className="lg:w-1/2 text-left">
+            <h3 className="text-xl sm:text-[48px] font-montserrat-medium cursor-pointer text-[#101011]">{tabsData[selectedTab].title}</h3>
+            <p className="mt-4 text-[#000000]  text-sm sm:text-[28px]">{tabsData[selectedTab].description}</p>
 
-          {/* Features List */}
-          <ul className="mt-14 leading-[2] text-base  sm:text-lg font-semibold">
-            {tabsData[selectedTab].features.map((feature, index) => (
-              <li key={index} className="flex items-center underline  gap-2 text-[#000000] font-montserrat-semibold ">
-                <img src={feature.icon || "/placeholder.svg"} alt="" className="w-6 h-6" />
-                <span className="hover:underline cursor-pointer text-[20px] lg:text-[28px]">{feature.text}</span>
-              </li>
-            ))}
-          </ul>
+            {/* Features List */}
+            <ul className="mt-14 leading-[2] text-base  sm:text-lg font-semibold">
+              {tabsData[selectedTab].features.map((feature, index) => (
+                <li key={index} className="flex items-center underline  gap-2 text-[#000000] font-montserrat-semibold ">
+                  <img src={feature.icon || "/placeholder.svg"} alt="" className="w-9 h-8" />
+                  <span className="hover:underline cursor-pointer text-[20px] lg:text-[28px]">{feature.text}</span>
+                </li>
+              ))}
+            </ul>
 
-          {/* About Link */}
-          <div  onClick={()=>{navigate('/about')}} className="mt-6 flex items-center text-[#101011] font-medium text-[26px] cursor-pointer font-urbanist-semibold hover:underline">
-            About Rejuvcare →
+            {/* About Link */}
+            <div onClick={() => { navigate('/about') }} className="mt-6 flex items-center text-[#101011] font-medium text-[26px] cursor-pointer font-urbanist-semibold hover:underline">
+              About Rejuvcare →
+            </div>
+          </div>
+
+          {/* Right Image */}
+          <div className="lg:w-1/2 mt-6 lg:mt-0">
+            <img
+              src={tabsData[selectedTab].image || "/placeholder.svg"}
+              alt={`${selectedTab} Illustration`}
+              className="rounded-xl w-full shadow-md"
+            />
           </div>
         </div>
-
-        {/* Right Image */}
-        <div className="lg:w-1/2 mt-6 lg:mt-0">
-          <img
-            src={tabsData[selectedTab].image || "/placeholder.svg"}
-            alt={`${selectedTab} Illustration`}
-            className="rounded-xl w-full shadow-md"
-          />
-        </div>
       </div>
-    </div>
 
       {/* Testimonials Section */}
-      <div className="relative p-6 md:px-20 text-center bg-[#f8f8f8]">
-      <img 
-  src={leftcross} 
-  alt="background" 
-  className="absolute left-0  top-[120vh] sm:top-[100vh] md:top-[110vh] lg:top-[120vh] -translate-y-1/2 w-[100px] sm:w-[200px] md:w-[300px] lg:w-[350px] opacity-90" 
-/>
+      <div className="relative p-6 md:px-20 pt-20 text-center bg-[#f8f8f8]">
+        <img
+          src={leftcross}
+          alt="background"
+          className="absolute left-0  top-[120vh] sm:top-[100vh] md:top-[110vh] lg:top-[120vh] -translate-y-1/2 w-[100px] sm:w-[200px] md:w-[300px] lg:w-[350px] opacity-90"
+        />
 
-        <h3 className="font-semibold text-black text-2xl sm:text-3xl font-montserrat-semibold md:text-[40px]">Testimonials</h3>
-        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-montserrat-semibold 2xl:text-[72px] text-black mt-2">
+        <h3 className="font-semibold text-black text-2xl sm:text-3xl font-montserrat-semibold md:text-[35px]">Testimonials</h3>
+        <h2 className="text-2xl sm:text-3xl md:text-4xl lg:text-5xl font-montserrat-semibold 2xl:text-[62px] text-black mt-2">
           Heartfelt Words from Those
           <br className="hidden sm:block" /> We Care For
         </h2>
-        <p className="text-[#000000] text-base sm:text-lg font-montserrat-regular md:text-xl lg:text-2xl xl:text-[32px] mt-4 max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] mx-auto">
+        <p className="text-[#000000] text-base sm:text-lg font-montserrat-regular md:text-xl lg:text-xl xl:text-[28px] mt-4 max-w-[90%] sm:max-w-[80%] md:max-w-[70%] lg:max-w-[60%] mx-auto">
           Our clients share their experiences of trust, compassion, and the positive difference Rejuvcare has made in
           their lives. Here's what they have to say.
         </p>
@@ -293,7 +288,7 @@ export default function Home() {
           }].map((testimonial, index) => (
             <div
               key={index}
-              className="border-[3px] border-[#ADCF5B33] p-6 sm:py-8 sm:px-6 rounded-[20px] bg-white shadow-sm w-full lg:w-[400px] xl:w-[450px] 2xl:w-[500px] min-w-[300px] flex flex-col justify-between text-left"
+              className="border-[3px] border-[#ADCF5B33] p-6 sm:py-8 sm:px-6 rounded-[20px] bg-[#f8f8f8] shadow-sm w-full lg:w-[400px] xl:w-[450px] 2xl:w-[500px] min-w-[300px] flex flex-col justify-between text-left"
             >
               <div>
                 <p className="text-xl sm:text-2xl md:text-3xl xl:text-[32px] font-montserrat-medium text-[#000000] leading-tight">
