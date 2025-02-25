@@ -14,7 +14,7 @@ export default function Navbar() {
   ];
 
   return (
-    <nav className="w-full  bg-white shadow-sm py-4 px-6 md:px-10 xl:px-26">
+    <nav className="w-full  bg-[#f8f8f8] shadow-sm py-4 px-6 md:px-10 xl:px-26">
       <div className="max-w-[1440px] mx-auto flex items-center justify-between">
         
         {/* Logo */}
@@ -61,7 +61,6 @@ export default function Navbar() {
     {item.name}
   </Link>
 ))}
-
           <a
             href="/contactus"
             className="w-[160px] h-[50px] flex items-center justify-center gap-[10px] bg-[#3D864B] text-white text-lg font-urbanist rounded-[8px] border-r-[4px] border-b-[5px] border-[#ADCF5B] px-[24px] py-[22px] hover:bg-[#3d6f44] transition-all"

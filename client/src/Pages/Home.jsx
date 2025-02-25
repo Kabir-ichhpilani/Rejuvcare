@@ -228,7 +228,7 @@ export default function Home() {
             {tabsData[selectedTab].features.map((feature, index) => (
               <li key={index} className="flex items-center underline  gap-2 text-[#000000] font-montserrat-semibold ">
                 <img src={feature.icon || "/placeholder.svg"} alt="" className="w-6 h-6" />
-                <span className="hover:underline cursor-pointer text-[24px] lg:text-[28px]">{feature.text}</span>
+                <span className="hover:underline cursor-pointer text-[20px] lg:text-[28px]">{feature.text}</span>
               </li>
             ))}
           </ul>
