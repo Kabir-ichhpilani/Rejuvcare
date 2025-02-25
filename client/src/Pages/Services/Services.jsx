@@ -175,8 +175,8 @@ export default function Services() {
     {/* Section Title */}
     <h2 className="text-center text-2xl sm:text-3xl md:text-4xl lg:text-5xl xl:text-[56px] 2xl:text-[72px] font-urbanist-medium leading-tight mb-8 sm:mb-12 lg:mb-16">
       Why Our <span className="text-[#3D864B]">Care</span> is Made Just
-      <br className="hidden sm:block" />
-      for <span className="text-[#3D864B]">You</span>
+      <br className=" sm:block" />
+       for <span className="text-[#3D864B]">You</span>
     </h2>
 
     {/* Cards Grid */}

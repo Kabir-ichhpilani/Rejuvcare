@@ -23,32 +23,37 @@ export default function Contactus() {
           </p>
         </div>
       </div>
-
       {/* Contact Form Section */}
       <div className="max-w-7xl mx-auto py-16 px-4 sm:px-6 lg:px-8 flex flex-col md:flex-row items-center gap-12">
         {/* Left Column */}
-        <div className="md:w-1/2 flex flex-col space-y-6">
-          <h2 className="text-5xl md:text-[62px] leading-tight font-urbanist-extrabold">
+        <div className="md:w-1/2 flex flex-col  space-y-2 sm:space-y-6">
+          <h2 className="text-4xl md:text-[52px] leading-tight font-urbanist-extrabold">
             Connect With Our
           </h2>
-          <h2 className="text-5xl md:text-[62px] leading-tight font-urbanist-extrabold text-[#3D864B]">
+          <h2 className="text-4xl md:text-[52px] leading-tight font-urbanist-extrabold text-[#3D864B]">
             Caring Team
           </h2>
           <p className="text-[#101011] text-2xl md:text-[25px] leading-normal font-urbanist-regular">
             Let us know how we can support your needs <br/> today.
           </p>
-          <div className="flex items-center bg-[#E9EFDE] p-10 relative h-[30vh] mt-32 rounded-lg shadow-md overflow-visible">
-            <div className="flex-1">
-              <p className="text-gray-800 font-urbanist-semibold text-xl md:text-2xl">
-                Thank you for connecting <br/> with Rejuvcare! A care <br/>expert will reach out to<br/> you soon.
-              </p>
-            </div>
-            <img src={thankyougirl || "/placeholder.svg"} alt="Healthcare professional" className="w-40 right-[-50px] bottom-0  absolute md:w-62" />
-          </div>
-        </div>
+          <div className="flex flex-col xl:flex-row items-center bg-[#E9EFDE] p-10 relative min-h-[30vh] mt-32 rounded-lg shadow-md overflow-visible text-center xl:text-left">
+  <div className="flex-1">
+    <p className="text-gray-800 font-urbanist-semibold text-xl md:text-2xl max-w-full xl:max-w-[70%]">
+      Thank you for connecting <br /> with Rejuvcare! A care <br /> expert will reach out to <br /> you soon.
+    </p>
+  </div>
+  <div className="mt-6 xl:mt-0 xl:absolute xl:right-[-10px] sm:right-[-50px] bottom-0">
+    <img
+      src={thankyougirl || "/placeholder.svg"}
+      alt="Healthcare professional"
+      className="w-62 md:w-52 lg:w-60 xl:w-62"
+    />
+  </div>
+</div>
 
+        </div>
         {/* Right Column - Form */}
-        <div className="md:w-1/2 bg-[#E9EFDE]  p-10 rounded-lg h-[85vh] shadow-md">
+        <div className="md:w-1/2 bg-[#E9EFDE]  p-10 rounded-lg lg:h-[105vh] xl:h-[85vh] shadow-md">
           <form className="space-y-6">
             <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
               <div>
