@@ -38,7 +38,7 @@ const About = () => {
                             </p>
                             <button
 
-                                className="inline-block cursor-pointer bg-[#3D864B] inset-shadow-sm shadow-[#ADCF5B] text-white px-6 md:px-8 py-3 rounded-lg hover:bg-[#3d8f5d] transition-colors"
+                                className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 font-urbanist  border-r-[3px] border-b-[3px] border-[#ADCF5B] font-urbanist-bold rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer"
                             >
                                 Contact Us
                             </button>

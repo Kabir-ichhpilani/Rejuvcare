@@ -33,7 +33,7 @@ const ServiceCard = ({ icon, title, description }) => (
 
 const BenefitItem = ({  icon, title, description }) => (
     <div className="flex items-start space-x-4 mb-6">
-        <div className="bg-[#E9EFDE] p-4 w-17 h-17 xl:w-25 xl:h-23 rounded-2xl ">
+        <div className="bg-[#E9EFDE] p-4 w-24 h-17 xl:w-30 xl:h-23 rounded-2xl ">
             <img src={icon} className="lg:w-17 lg:h-12 sm:w-12 sm:h-9  xl:w-23 xl:h-18 text-[#3D864B] " />
         </div>
         <div>
@@ -150,7 +150,7 @@ const Domestic = () => {
 
                         <button
 
-                            className="inline-block cursor-pointer bg-[#3D864B] inset-shadow-sm shadow-[#ADCF5B] text-white px-6 md:px-8 py-3 rounded-lg hover:bg-[#3d8f5d] transition-colors"
+                            className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 font-urbanist  border-r-[3px] border-b-[3px] border-[#ADCF5B] font-urbanist-bold rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer"
                         >
                             Contact Us
                         </button>
@@ -211,7 +211,7 @@ const Domestic = () => {
                 </div>
 
             </div>
-            <div className="flex justify-center w-screen bg-[#E9EFDE] items-center text-center relative">
+            <div className="flex justify-center  bg-[#E9EFDE] items-center text-center relative">
                 {/* Positioned image similar to the screenshot */}
                 <img src={impimg4} className="absolute w-60 md:opacity-40 right-2 top-5/8 opacity-0 transform -translate-y-1/2 h-60" />
 
