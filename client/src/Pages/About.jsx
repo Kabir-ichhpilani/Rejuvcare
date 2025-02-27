@@ -150,8 +150,8 @@ const About = () => {
 
 
             <div className="bg-[#ADCF5B33] z-50 relative pt-4 px-8 flex flex-col md:flex-row items-center justify-between">
-                <div className="w-full md:w-2/3 lg:w-[700px] xl:pl-18 lg:pl-6 space-y-6">
-                    <h1 className=" text-3xl xl:text-5xl  font-urbanist-regular leading-tight">
+                <div className="w-full md:w-2/3 lg:w-[700px] pt-3  xl:pl-18 lg:pl-6 space-y-6">
+                    <h1 className=" text-3xl lg:text-4xl xl:text-5xl xl:w-[750px] font-urbanist-regular leading-tight">
                         We're Committed To Transforming Care Into A Journey Of{" "}
                         <span className="text-[#3d864b] font-urbanist-extrabold">Rejuvenation</span> And Empowerment.
                     </h1>
