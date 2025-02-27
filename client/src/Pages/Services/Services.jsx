@@ -108,7 +108,7 @@ export default function Services() {
                 From assisting with daily routines to providing educational and emotional support, our team is here to
                 help children thrive while bringing you peace of mind.
               </p>
-              <button onClick={()=>{navigate('/services/elderly')}} className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 font-urbanist  border-r-[3px] border-b-[3px] border-[#ADCF5B] font-urbanist-bold rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer">
+              <button onClick={()=>{navigate('/services/childcare')}} className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 font-urbanist  border-r-[3px] border-b-[3px] border-[#ADCF5B] font-urbanist-bold rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer">
                 Know More
               </button>
             </div>
@@ -155,7 +155,7 @@ export default function Services() {
                 Our trained staff assists with cleaning, meal preparation, and other essential chores, giving you more
                 time to focus on what truly matters.
               </p>
-              <button onClick={()=>{navigate('/services/elderly')}} className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 font-urbanist  border-r-[3px] border-b-[3px] border-[#ADCF5B] font-urbanist-bold rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer">
+              <button onClick={()=>{navigate('/services/domestic')}} className="bg-[#3D864B] text-white px-6 sm:px-8 py-2 sm:py-3 font-urbanist  border-r-[3px] border-b-[3px] border-[#ADCF5B] font-urbanist-bold rounded-lg hover:bg-opacity-90 transition-all text-base sm:text-lg md:text-xl lg:text-2xl cursor-pointer">
                 Know More
               </button>
             </div>
